@@ -10,4 +10,6 @@ export enum Color {
   Green = "#CAEFF0",
   Orange = "#FEE9E2",
   Purple = "#F4EEFD",
+  Primery_Text = "var(--primary-text)",
+  Primery_Bg = "var(--primary-bg)",
 }

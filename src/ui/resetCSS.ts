@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { Color } from "./colors";
 
 export const resetCSS = css`
   * {
@@ -12,6 +13,8 @@ export const resetCSS = css`
   }
 
   body {
+    color: ${Color.Primery_Text};
+    border-color: ${Color.Primery_Bg};
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;

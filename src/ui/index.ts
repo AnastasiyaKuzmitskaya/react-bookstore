@@ -5,5 +5,16 @@ import { resetCSS } from "./resetCSS";
 import { GlobalStyles } from "./GlobalStyles";
 import { themeDark, themeLight } from "./theme";
 import { Margin } from "./margin";
+import { AppWrapper } from "./AppWrapper";
 
-export { Color, Media, Typography, resetCSS, GlobalStyles, themeDark, themeLight, Margin };
+export {
+  Color,
+  Media,
+  Typography,
+  resetCSS,
+  GlobalStyles,
+  themeDark,
+  themeLight,
+  Margin,
+  AppWrapper,
+};
