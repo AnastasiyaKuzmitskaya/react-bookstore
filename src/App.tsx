@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { BookList } from "./components/BookList/BookList";
-import { bookstoreAPI } from "./services";
-import { INewBookApi } from "./services/types/types";
+import { BookList } from "./components/BookList";
+import { Header } from "./components/Header";
 import { AppWrapper } from "./ui";
 
 type Theme = "light" | "dark";
@@ -18,6 +17,8 @@ export const App = () => {
 
   return (
     <AppWrapper>
+      <Header/>
+      
       APP
       <BookList books={[]} />
       {/*  <Header />
