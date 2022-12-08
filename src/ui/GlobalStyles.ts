@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import { resetCSS } from "./resetCSS";
 import { themeDark, themeLight } from "./theme";
 

@@ -14,7 +14,8 @@ export const resetCSS = css`
 
   body {
     color: ${Color.Primery_Text};
-    border-color: ${Color.Primery_Bg};
+    background-color: ${Color.Primery_Bg};
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
