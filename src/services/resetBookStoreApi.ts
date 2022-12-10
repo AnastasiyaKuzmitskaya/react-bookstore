@@ -7,10 +7,9 @@ class restBookStoreApi {
     baseURL: this.BASE_URL,
   });
 
-  public async getNewBooks(): Promise<INewBooksApi> {
+  public async getNewBooks(){
     const { data } = await this.API.get<INewBooksApi>("/new");
-
-    return data;
+    return data;  
   }
 
   public async getBooksBySearch(title: string, page: string): Promise<ISearchBooksApi> {

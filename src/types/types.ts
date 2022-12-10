@@ -1,3 +1,5 @@
+import { IBookDetailsApi } from "../services";
+
 export interface IBook {
   title: string;
   subtitle: string;
@@ -11,4 +13,11 @@ export interface INewBooks{
 books: IBook[];
 error: string;
 total: string;
+}
+
+export interface IBooksNewState {
+  books: IBook[];
+  error: any;
+  total: string;
+  result: IBookDetailsApi;
 }

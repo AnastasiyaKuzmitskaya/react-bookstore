@@ -34,7 +34,7 @@ const H3 = css`
 const S1 = css`
   font-family: "Bebas Neue";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.05em;
 `;

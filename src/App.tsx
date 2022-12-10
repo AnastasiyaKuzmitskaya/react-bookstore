@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { BookList } from "./components/BookList";
+import { useEffect, useState } from "react";
+import { Book } from "./components";
 import { Header } from "./components/Header";
 import { AppWrapper } from "./ui";
 
@@ -17,14 +17,9 @@ export const App = () => {
 
   return (
     <AppWrapper>
-      <Header/>
+      <Header />
+      <Book/>
       
-      APP
-      <BookList books={[]} />
-      {/*  <Header />
-      <BooksList />
-      <Subscribe />
-      <Footer /> */}
       <button onClick={handlTheme}>DFDRRG</button>
     </AppWrapper>
   );

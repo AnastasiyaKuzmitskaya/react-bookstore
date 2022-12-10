@@ -1,5 +1,11 @@
-import React from "react";
+import { StyledNavbar } from "./style";
 
 export const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <StyledNavbar>
+      {/*   <Favorites />
+      <ShopCart />
+      <UseAccount /> */}
+    </StyledNavbar>
+  );
 };
