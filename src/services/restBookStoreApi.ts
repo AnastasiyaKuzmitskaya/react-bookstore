@@ -7,6 +7,7 @@ class restBookStoreApi {
     baseURL: this.BASE_URL,
   });
 
+
   public async getNewBooks(){
     const { data } = await this.API.get<INewBooksApi>("/new");
     return data;  

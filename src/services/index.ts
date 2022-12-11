@@ -1,4 +1,4 @@
-import { bookstoreAPI } from "./resetBookStoreApi";
+import { bookstoreAPI } from "./restBookStoreApi";
 import { INewBookApi, INewBooksApi, ISearchBooksApi, IBookDetailsApi } from "./types/types";
 
 export { bookstoreAPI };

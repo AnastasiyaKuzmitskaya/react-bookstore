@@ -6,6 +6,10 @@ interface IProps {
 }
 
 export const BookItem = ({ book }: IProps) => {
+ 
+
+  
+  
   return (
     <StyledBookItem key={book.isbn13}>
       <BookImg src={book.image} alt={book.title} />
