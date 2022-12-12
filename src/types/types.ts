@@ -1,23 +1,13 @@
-import { IBookDetailsApi } from "../services";
+import { IBookDetailsApi, INewBookApi, INewBooksApi } from "../services";
 
-export interface IBook {
-  title: string;
-  subtitle: string;
-  isbn13: string;
-  price: string;
-  image: string;
-  url: string;
+export interface IBookDetails {
+  book: IBookDetailsApi;
+  error: null | string;
+  isLoading: boolean;
 }
 
-export interface INewBooks{
-books: IBook[];
-error: string;
-total: string;
-}
-
-export interface IBooksNewState {
-  books: IBook[];
-  error: any;
-  total: string;
-  result: IBookDetailsApi;
+export interface INewBooks {
+  books: INewBookApi[];
+  error: null | string;
+  isLoading: boolean;
 }

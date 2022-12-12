@@ -1,3 +1,3 @@
-import { IBook, INewBooks, IBooksNewState } from "./types";
+import { IBookDetails, INewBooks } from "./types";
 
-export type { IBook, INewBooks, IBooksNewState };
+export type { IBookDetails, INewBooks };

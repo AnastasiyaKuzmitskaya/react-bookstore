@@ -1,36 +1,63 @@
-export interface INewBookApi {
-    title: string;
-    subtitle: string;
-    isbn13: string;
-    price: string;
-    image: string;
-    url: string;
-  }
+interface INewBookApi {
+  title: string;
+  subtitle: string;
+  isbn13: string;
+  price: string;
+  image: string;
+  url: string;
+}
 
-  export interface INewBooksApi {
-    books: INewBookApi[];
-    error: string;
-    total: string;
-  }
+interface INewBooksApi {
+  books: INewBookApi[];
+  title: string;
+  subtitle: string;
+  isbn13: string;
+  price: string;
+  image: string;
+  url: string;
+}
 
-  export interface ISearchBooksApi extends INewBooksApi {
-    page: string;
-  }
+interface NewBooksResponse {
+  error: string;
+  total: string;
+  books: INewBooksApi[];
+}
+interface ISearchBooksApi extends NewBooksResponse {
+  page: string;
+}
 
-  export interface IBookDetailsApi {
-    error: string;
-    title: string;
-    subtitle: string;
-    authors: string;
-    publisher: string;
-    isbn10: string;
-    isbn13: string;
-    pages: string;
-    year: string;
-    rating: string;
-    desc: string;
-    price: string;
-    image: string;
-    url: string;
-    pdf: { [key: string]: string };
-  }
+interface IBookDetailsApi {
+  error: string;
+  title: string;
+  subtitle: string;
+  authors: string;
+  publisher: string;
+  isbn10: string;
+  isbn13: string;
+  pages: string;
+  year: string;
+  rating: string;
+  desc: string;
+  price: string;
+  image: string;
+  url: string;
+  pdf: IFormatBook;
+  language: string;
+}
+interface IFormatBook {
+  [format: string]: string;
+}
+
+interface ISearchResult {
+  searchValue: string;
+  page: string;
+}
+export type {
+  INewBookApi,
+  INewBooksApi,
+  ISearchBooksApi,
+  IBookDetailsApi,
+  IFormatBook,
+  NewBooksResponse,
+  ISearchResult,
+};

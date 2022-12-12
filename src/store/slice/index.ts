@@ -1,3 +1,3 @@
-import { featchBook, featchBookDetails, featchBooksBySearch } from "./bookSlice";
+import { featchNewBooks } from "./newBookSlice";
 
-export { featchBook, featchBookDetails, featchBooksBySearch };
+export { featchNewBooks };
