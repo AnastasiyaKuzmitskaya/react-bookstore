@@ -2,7 +2,7 @@ import axios from "axios";
 import { IBookDetailsApi, INewBooksApi, ISearchBooksApi } from "./index";
 
 class restBookStoreApi {
-  private readonly BASE_URL = "https://api.itbook.store/1.0/";
+  private readonly BASE_URL = process.env.REACT_APP_BASE_URL_BOOK_API;
   private readonly API = axios.create({
     baseURL: this.BASE_URL,
   });
