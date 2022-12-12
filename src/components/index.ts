@@ -1,9 +1,9 @@
-import { Book } from "./Book";
-import { BookItem } from "./BookItem";
-import { BookList } from "./BookList";
-import { Favorites } from "./Favorites";
-import { Header } from "./Header";
-import { HeaderForm } from "./HeaderForm";
-import { Navbar } from "./Navbar";
+import { Book } from "./Book/Book";
+import { BookItem } from "./BookItem/BookItem";
+import { BookList } from "./BookList/BookList";
+import { Favorites } from "./Favorites/Favorites";
+import { Header } from "./Header/Header";
+import { HeaderForm } from "./HeaderForm/HeaderForm";
+import { Navbar } from "./Navbar/Navbar";
 
 export { Book, BookItem, BookList, Favorites, Header, HeaderForm, Navbar };

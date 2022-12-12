@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Book } from "./components";
-import { Header } from "./components/Header";
+import { Header } from "./components";
 import { AppWrapper } from "./ui";
 
 type Theme = "light" | "dark";

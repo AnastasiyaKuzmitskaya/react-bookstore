@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { featchNewBooks, getBooks, useAppDispatch, useAppSelector } from "../../store";
-import { BookList } from "../BookList";
+import { BookList } from "../BookList/BookList";
 import { StyledBook, Title } from "./styles";
 
 export const Book = () => {

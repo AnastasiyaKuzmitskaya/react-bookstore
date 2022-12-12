@@ -2,14 +2,17 @@ import styled from "styled-components";
 import { Color, Margin, Typography } from "../../ui";
 
 export const StyledBookItem = styled.li`
-  display: flex;
+  max-width: 352px;
+
+  margin: 0 auto;
 `;
 
 export const BookImg = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 226px;
+  min-width: 226px;
+  width: 100%;
   background-color: ${Color.Blue};
 `;
 
@@ -24,6 +27,4 @@ export const BookSubtitle = styled.p`
   ${Margin.Large};
 `;
 
-export const BookPrice = styled.p`
-  display: flex;
-`;
+export const BookPrice = styled.p``;

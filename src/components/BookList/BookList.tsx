@@ -1,5 +1,5 @@
 import { INewBookApi } from "../../services/types/types";
-import { BookItem } from "../BookItem";
+import { BookItem } from "../BookItem/BookItem";
 import { StyledBookList } from "./styles";
 
 interface IProps {
@@ -8,10 +8,13 @@ interface IProps {
 
 export const BookList = ({ books }: IProps) => {
   return (
-    <StyledBookList>
-      {books.map((book) => (
-        <BookItem book={book} key={book.isbn13} />
-      ))}
-    </StyledBookList>
+    <>
+      {" "}
+      <StyledBookList>
+        {books.map((book) => (
+          <BookItem book={book} key={book.isbn13} />
+        ))}
+      </StyledBookList>
+    </>
   );
 };
