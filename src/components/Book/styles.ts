@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Margin, Media, Typography } from "../../ui";
+import { Margin, Media, Typography } from "ui";
 
 export const StyledBook = styled.div`
   margin-bottom: ${Margin.ExtraLarge};

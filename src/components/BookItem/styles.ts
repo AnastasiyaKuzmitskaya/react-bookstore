@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color, Margin, Typography } from "../../ui";
+import { Color, Margin, Typography } from "ui";
 
 export const StyledBookItem = styled.li`
   max-width: 352px;

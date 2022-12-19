@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Logo } from "../../assets/icons";
-import { Color, Margin, Media } from "../../ui";
+import { Logo } from "assets";
+import { Color, Margin, Media } from "ui";
 
 export const StyledHeader = styled.ul`
   display: flex;

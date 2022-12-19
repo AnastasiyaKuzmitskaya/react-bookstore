@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Margin } from "../../ui";
+import { Margin } from "ui";
 
 export const StyledBookList = styled.ul`
   display: grid;
