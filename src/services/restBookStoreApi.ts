@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IBookDetailsApi, INewBooksApi, ISearchBooksApi } from "./index";
+import { IBookDetailsApi, INewBooksApi, ISearchBooksApi } from "services";
 
 class restBookStoreApi {
   private readonly BASE_URL = process.env.REACT_APP_BASE_URL_BOOK_API;

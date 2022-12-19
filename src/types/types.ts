@@ -1,4 +1,4 @@
-import { IBookDetailsApi, INewBookApi, INewBooksApi } from "../services";
+import { IBookDetailsApi, INewBookApi } from "services";
 
 export interface IBookDetails {
   book: IBookDetailsApi;
