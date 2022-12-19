@@ -1,4 +1,4 @@
-import { INewBookApi } from "../../services";
+import { INewBookApi } from "services";
 import { BookImg, BookPrice, BookSubtitle, BookTitle, StyledBookItem } from "./styles";
 
 interface IProps {

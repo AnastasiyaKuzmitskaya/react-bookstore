@@ -1,5 +1,5 @@
-import { INewBookApi } from "../../services/types/types";
-import { BookItem } from "../BookItem/BookItem";
+import { INewBookApi } from "services";
+import { BookItem } from "components";
 import { StyledBookList } from "./styles";
 
 interface IProps {

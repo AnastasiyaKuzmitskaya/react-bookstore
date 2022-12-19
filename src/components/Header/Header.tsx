@@ -1,6 +1,6 @@
 import { LogoIcons, StyledHeader } from "./styles";
-import { HeaderForm } from "../HeaderForm/HeaderForm";
-import { Navbar } from "../Navbar/Navbar";
+import { HeaderForm, Navbar } from "components";
+
 
 export const Header = () => {
   return (
