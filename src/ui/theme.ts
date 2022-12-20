@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { Color } from "./colors";
+import { Color } from "ui";
 
 export const themeLight = css`
   --primary-text: ${Color.Primary};

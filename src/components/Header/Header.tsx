@@ -1,5 +1,6 @@
 import { LogoIcons, StyledHeader } from "./styles";
 import { HeaderForm, Navbar } from "components";
+import { TogglerTheme } from "components";
 
 
 export const Header = () => {
@@ -8,6 +9,7 @@ export const Header = () => {
       <LogoIcons />
       <HeaderForm />
       <Navbar />
+      <TogglerTheme type="checkbox"/>
     </StyledHeader>
   );
 };

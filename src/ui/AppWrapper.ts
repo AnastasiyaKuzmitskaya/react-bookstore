@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Media } from "./media";
+import { Media } from "ui";
 
 export const AppWrapper = styled.div`
   max-width: 1200px;

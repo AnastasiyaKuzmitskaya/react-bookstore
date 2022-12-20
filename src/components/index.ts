@@ -5,5 +5,6 @@ import { Favorites } from "./Favorites/Favorites";
 import { Header } from "./Header/Header";
 import { HeaderForm } from "./HeaderForm/HeaderForm";
 import { Navbar } from "./Navbar/Navbar";
+import { TogglerTheme } from "./TogglerTheme/TogglerTheme";
 
-export { Book, BookItem, BookList, Favorites, Header, HeaderForm, Navbar };
+export { Book, BookItem, BookList, Favorites, Header, HeaderForm, Navbar, TogglerTheme };
