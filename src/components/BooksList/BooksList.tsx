@@ -6,7 +6,7 @@ interface IProps {
   books: INewBookApi[];
 }
 
-export const BookList = ({ books }: IProps) => {
+export const BooksList = ({ books }: IProps) => {
   return (
     <>
       {" "}
