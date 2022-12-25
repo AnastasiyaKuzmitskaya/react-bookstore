@@ -19,6 +19,7 @@ export const resetCSS = css`
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
+  
   }
 
   main {

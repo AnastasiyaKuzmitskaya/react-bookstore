@@ -8,4 +8,4 @@ export { featchNewBooks };
 export type { AppDispatch, RootState };
 export { getBooks };
 export { useAppDispatch, useAppSelector };
-export {store}
+export { store };

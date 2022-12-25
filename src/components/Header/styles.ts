@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Logo } from "assets";
 import { Color, Margin, Media } from "ui";
 
-export const StyledHeader = styled.ul`
+export const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
