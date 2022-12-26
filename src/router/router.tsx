@@ -5,10 +5,9 @@ import { ROUTE } from "./routes";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<MainTemplate/>}>
+    <Route path={ROUTE.HOME} element={<MainTemplate />}>
       <Route index element={<HomePage />} />
       <Route path={ROUTE.BOOK_DETAILS} element={<DetailsBookPage />} />
-      
     </Route>,
   ),
 );

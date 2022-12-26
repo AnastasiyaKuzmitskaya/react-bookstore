@@ -5,19 +5,22 @@ export const StyledToggler = styled.input`
   position: relative;
   width: 64px;
   height: 32px;
+
   background-color: ${Color.Blue};
   border: 2px solid ${Color.Secondary};
   border-radius: 50px;
   appearance: none;
   cursor: pointer;
-  box-shadow: inset 0 0 0 2px ${Color.White};
   transform-origin: left center;
+  box-shadow: inset 0 0 0 2px ${Color.White};
+
   &::before {
     content: "";
     position: absolute;
-    z-index: 2;
+
     top: 3px;
     left: 3px;
+    z-index: 2;
     display: block;
     width: 22px;
     height: 22px;

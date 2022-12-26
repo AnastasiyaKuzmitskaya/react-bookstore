@@ -4,14 +4,15 @@ import { Media } from "ui";
 export const StyledAPP = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
-  max-width: 1920px;
   width: 100%;
+  max-width: 1920px;
+  padding: 15px 0;
 `;
 
 export const Container = styled.div`
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
+
   padding: 0 15px;
   margin: 0 auto;
 

@@ -7,14 +7,15 @@ export const StyledBookList = styled.ul`
   column-gap: ${Margin.ExtraMedium};
   row-gap: ${Margin.SuperLarge};
   padding-bottom: ${Margin.ExtraLarge};
+  margin-bottom: ${Margin.SuperLarge};
   border-bottom: 1px solid ${Color.Gray};
-  margin-bottom:${Margin.SuperLarge};
+
   ${Media.LG} {
     grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
   }
   ${Media.MD} {
     grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
     padding-bottom: ${Margin.ExtraLargeMobile};
-    margin-bottom:${Margin.SuperLargeMobile};
+    margin-bottom: ${Margin.SuperLargeMobile};
   }
 `;

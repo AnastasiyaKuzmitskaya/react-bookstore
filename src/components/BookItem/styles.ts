@@ -3,17 +3,16 @@ import styled from "styled-components";
 import { Color, Margin, Media, Typography } from "ui";
 
 export const StyledBookItem = styled.li`
-  display: block;
-  max-width: 352px;
+  position: relative;
+  display: -webkit-box;
   width: 100%;
-  margin: 0 auto; 
+  max-width: 352px;
+  margin: 0 auto;
   border-radius: 15px;
   border: 1px solid ${Color.Gray};
   transition: all 0.5s ease-out;
-  position: relative;
   cursor: pointer;
   &:hover {
-    position: relative;
     transform: translateY(-10px);
     box-shadow: 10px 5px 5px ${Color.Secondary};
   }
@@ -23,16 +22,18 @@ export const StyledBookItem = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 `;
 
 export const BookImg = styled.img`
-  min-width: 226px;
   width: 100%;
-  background-color: ${Color.Blue};
-  
+  min-width: 226px;
   margin-bottom: ${Margin.Small};
-  border-radius: 15px;
+  background-color: ${Color.Blue};
+  border-radius: 15px 15px 0 0;
+
   ${Media.LG} {
     min-width: 210px;
   }
@@ -42,27 +43,30 @@ export const BookImg = styled.img`
 `;
 
 export const BookTitle = styled.h3`
+  display: -webkit-box;
+  height: 64px;
   ${Typography.H3};
   padding: 0 10px;
   margin-bottom: ${Margin.ExtraSmall};
-  display: block;
-  overflow: hidden;
-  white-space: wrap;
+
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 export const BookSubtitle = styled.p`
-  ${Typography.S1};
   padding: 0 10px;
   margin-bottom: ${Margin.SuperLarge};
+  ${Typography.S1};
+
   ${Media.MD} {
     margin-bottom: ${Margin.Large};
   }
 `;
 
 export const BookPrice = styled.p`
-  ${Typography.H3};
-  align-content: flex-end;  
+  padding: 0 10px;
   margin-top: auto;
-  padding: 0 10px 10px;
+  ${Typography.H3};
 `;
