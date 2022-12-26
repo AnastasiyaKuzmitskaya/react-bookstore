@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/react-bookstore/static/js/main.d8839679.js",
+    "static/media/logo.svg": "/react-bookstore/static/media/logo.4df062493d3c8a2d9a244c508c206884.svg",
+    "static/media/search.svg": "/react-bookstore/static/media/search.fb7c71339a4b264dfb3e9806f3b103eb.svg",
+    "index.html": "/react-bookstore/index.html",
+    "main.d8839679.js.map": "/react-bookstore/static/js/main.d8839679.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d8839679.js"
+  ]
+}
