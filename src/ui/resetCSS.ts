@@ -19,7 +19,6 @@ export const resetCSS = css`
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-  
   }
 
   main {
@@ -84,8 +83,17 @@ export const resetCSS = css`
     top: -0.5em;
   }
 
-  img {
+  img,
+  object,
+  embed {
+    max-width: 100%;
     border-style: none;
+  }
+  html {
+    overflow-y: scroll;
+  }
+  ul {
+    list-style: none;
   }
 
   button,
