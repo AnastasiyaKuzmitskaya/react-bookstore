@@ -2,7 +2,7 @@
   "name": "react-bookstore",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AnastasiyaKuzmitskaya.github.io/react-bookstore",
+  "homepage": "https://AnastasiyaKuzmitskaya.github.io/react-bookstore/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -12,6 +12,7 @@
     "@types/node": "^16.18.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@types/react-router-dom": "^5.3.3",
     "@types/react-select": "^5.0.1",
     "@types/styled-components": "^5.1.26",
     "@types/uuid": "^9.0.0",

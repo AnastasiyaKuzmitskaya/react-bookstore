@@ -1,16 +1,16 @@
 import { Footer } from "components";
 import { Header } from "components";
 import { Outlet } from "react-router-dom";
-import { Container, StyledAPP } from "./style";
+import { Container, StyledMainTemplate } from "./styles";
 
 export const MainTemplate = () => {
   return (
-    <StyledAPP>
+    <StyledMainTemplate>
       <Container>
         <Header />
         <Outlet />
         <Footer />
       </Container>
-    </StyledAPP>
+    </StyledMainTemplate>
   );
 };

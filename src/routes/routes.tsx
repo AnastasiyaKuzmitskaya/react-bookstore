@@ -4,7 +4,7 @@ export enum ROUTE {
   BOOK_DETAILS = "book/:isbn",
   FAVORITES = "favorites",
   ACCOUNT = "account",
-  CART = "cart",
+  SHOP_BAG = "cart",
   SIGNIN = "sign-in",
   SIGNUP = "sign-up",
   RESET_PASSWORD = "reset-password",

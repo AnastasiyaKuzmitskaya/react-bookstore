@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Media } from "ui";
 
-export const StyledAPP = styled.div`
+
+export const StyledMainTemplate = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { StyledToggler } from "./style";
+import { StyledToggler } from "./styles";
 
 interface IProps {
   type: string;
