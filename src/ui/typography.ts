@@ -48,4 +48,9 @@ const B2 = css`
   letter-spacing: 0em;
 `;
 
-export const Typography = { H1, H2, H3, S1, B1, B2 };
+const SearchInput = css`
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+`;
+export const Typography = { H1, H2, H3, S1, B1, B2, SearchInput };

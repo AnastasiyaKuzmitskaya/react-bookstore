@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Logo } from "assets";
+import { LogoIcon } from "assets";
 import { Color, Margin, Media } from "ui";
 
 export const StyledHeader = styled.div`
@@ -11,7 +11,7 @@ export const StyledHeader = styled.div`
   border-bottom: 2px solid ${Color.Gray};
 `;
 
-export const LogoIcons = styled(Logo)`
+export const LogoIcons = styled(LogoIcon)`
   cursor: pointer;
 
   :hover path {

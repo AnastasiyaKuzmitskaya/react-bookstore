@@ -1,10 +1,25 @@
-import React from "react";
+import { SearchLogoIcon } from "assets";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { SearchButton, SearchInput, StyledForm } from "./styles";
+
+
 
 export const Search = () => {
+  
+  const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
+
+  const onSubmit = (data: any) => {
+    navigate(`/bookstore/search/${data.query}/1`);
+  };
+
   return (
-    <>
-      {" "}
-      <div>tfhfghgy</div>
-    </>
+    <StyledForm >
+      <SearchInput placeholder="Search..." type="text" {...register("query")} />
+      <SearchButton type="submit" onClick={handleSubmit(onSubmit)}>
+        <SearchLogoIcon />
+      </SearchButton>
+    </StyledForm>
   );
 };
