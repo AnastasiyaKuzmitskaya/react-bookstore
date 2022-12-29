@@ -12,7 +12,7 @@ export const Header = () => {
       </Link>
       <Search />
       <Navbar />
-      <TogglerTheme type="checkbox" />
+      <TogglerTheme />
     </StyledHeader>
   );
 };

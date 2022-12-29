@@ -39,4 +39,5 @@ const newBooksSlice = createSlice({
   },
 });
 
-export default newBooksSlice.reducer;
+
+export const newBooksReducer = newBooksSlice.reducer;

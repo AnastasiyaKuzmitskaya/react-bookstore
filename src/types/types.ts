@@ -11,3 +11,5 @@ export interface INewBooks {
   error: null | string;
   isLoading: boolean;
 }
+
+export type Theme = "dark" | "light";

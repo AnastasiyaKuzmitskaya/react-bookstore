@@ -1,19 +1,14 @@
-import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectTheme } from "store/selectors/theme-selector";
+import { setTheme } from "store/slices/theme-slice";
 import { StyledToggler } from "./styles";
 
-interface IProps {
-  type: string;
-}
+export const TogglerTheme = () => {
+  const dispatch = useDispatch();
+  const theme = useSelector(selectTheme);
 
-export const TogglerTheme = ({ type }: IProps) => {
-  const [theme, setTheme] = useState("light");
   const handleTheme = () => {
-    setTheme((theme) => (theme === "light" ? "dark" : "light"));
+    dispatch(setTheme(theme === "light" ? "dark" : "light"));
   };
-
-  useEffect(() => {
-    document.documentElement.setAttribute("theme", theme);
-  }, [theme]);
-
-  return <StyledToggler type={type} onClick={handleTheme} />;
+  return <StyledToggler onClick={handleTheme} />;
 };

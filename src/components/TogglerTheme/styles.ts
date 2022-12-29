@@ -13,7 +13,7 @@ export const StyledToggler = styled.input`
   cursor: pointer;
   transform-origin: left center;
   box-shadow: inset 0 0 0 2px ${Color.White};
-
+  text-transform: uppercase;
   &::before {
     content: "";
     position: absolute;
