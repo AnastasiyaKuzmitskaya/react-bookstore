@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Color, Margin, Media, Typography } from "ui";
 
+
 export const StyledBookItem = styled.li`
   position: relative;
   display: -webkit-box;
@@ -33,7 +34,6 @@ export const BookImg = styled.img`
   margin-bottom: ${Margin.Small};
   background-color: ${Color.Blue};
   border-radius: 15px 15px 0 0;
-
   ${Media.LG} {
     min-width: 210px;
   }
@@ -48,7 +48,7 @@ export const BookTitle = styled.h3`
   ${Typography.H3};
   padding: 0 10px;
   margin-bottom: ${Margin.ExtraSmall};
-
+  color: ${Color.Primary};
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
@@ -59,7 +59,7 @@ export const BookSubtitle = styled.p`
   padding: 0 10px;
   margin-bottom: ${Margin.SuperLarge};
   ${Typography.S1};
-
+  color: ${Color.Secondary};
   ${Media.MD} {
     margin-bottom: ${Margin.Large};
   }
@@ -69,4 +69,6 @@ export const BookPrice = styled.p`
   padding: 0 10px;
   margin-top: auto;
   ${Typography.H3};
+  color: ${Color.Primary};
+  align-content: flex-end;
 `;

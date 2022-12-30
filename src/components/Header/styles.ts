@@ -3,6 +3,7 @@ import { LogoIcon } from "assets";
 import { Color, Margin, Media } from "ui";
 
 export const StyledHeader = styled.div`
+  position:relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,14 +1,17 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Color, Media, Typography } from "ui";
 
 const StyledForm = styled.form`
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 542px;
+  padding: 14px 16px 10px 20px;
+  border: 1px solid ${Color.Gray};
   box-shadow: 5px 5px 5px ${Color.Gray};
+
   ${Media.MD} {
     max-width: 342px;
   }
@@ -19,11 +22,11 @@ const StyledForm = styled.form`
 
 const SearchInput = styled.input`
   width: 100%;
-  max-width: 542px;
-  padding: 14px 16px 10px 20px;
+  max-width: 480px;
+
   color: ${Color.Secondary};
-  border: 1px solid ${Color.Gray};
-  border-right: none;
+  border: none;
+  outline: none;
   opacity: 40%;
   ${Typography.SearchInput}
   outline: none;
@@ -33,15 +36,16 @@ const SearchInput = styled.input`
     color:${Color.Primary};
     opacity: 1;
   }
-  &:hover {
-    border: 1px solid ${Color.Primary_Light};
-    transition: all 0.5s;
-  }
+
   &:focus {
     opacity: 70%;
   }
 `;
 
-const SearchButton = styled.button``;
+const SearchButton = styled(motion.button)`
+  background: none;
+  border: none;
+  cursor: pointer;
+`;
 
 export { StyledForm, SearchInput, SearchButton };

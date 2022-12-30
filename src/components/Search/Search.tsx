@@ -3,10 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { SearchButton, SearchInput, StyledForm } from "./styles";
 
-
-
 export const Search = () => {
-  
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
 
@@ -15,9 +12,9 @@ export const Search = () => {
   };
 
   return (
-    <StyledForm >
+    <StyledForm>
       <SearchInput placeholder="Search..." type="text" {...register("query")} />
-      <SearchButton type="submit" onClick={handleSubmit(onSubmit)}>
+      <SearchButton onClick={handleSubmit(onSubmit)} type="submit" whileHover={{ scale: 1.1 }}>
         <SearchLogoIcon />
       </SearchButton>
     </StyledForm>
