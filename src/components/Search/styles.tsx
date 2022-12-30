@@ -42,6 +42,7 @@ const SearchInput = styled.input`
   }
 `;
 
+
 const SearchButton = styled(motion.button)`
   background: none;
   border: none;

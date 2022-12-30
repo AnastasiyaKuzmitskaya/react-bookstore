@@ -1,3 +1,4 @@
 import { useInput } from "./useInput";
+import { useWindowSize } from "./useWindowSize";
 
-export { useInput };
+export { useInput, useWindowSize };

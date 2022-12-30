@@ -12,4 +12,5 @@ export enum Color {
   Purple = "#F4EEFD",
   Primery_Text = "var(--primary-text)",
   Primery_Bg = "var(--primary-bg)",
+  Secondary_Text = "var(--secondary-text)",
 }

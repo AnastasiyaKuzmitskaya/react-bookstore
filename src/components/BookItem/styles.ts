@@ -48,7 +48,7 @@ export const BookTitle = styled.h3`
   ${Typography.H3};
   padding: 0 10px;
   margin-bottom: ${Margin.ExtraSmall};
-  color: ${Color.Primary};
+  color: ${Color.Primery_Text};
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
@@ -59,7 +59,7 @@ export const BookSubtitle = styled.p`
   padding: 0 10px;
   margin-bottom: ${Margin.SuperLarge};
   ${Typography.S1};
-  color: ${Color.Secondary};
+  color: ${Color.Secondary_Text};
   ${Media.MD} {
     margin-bottom: ${Margin.Large};
   }
@@ -69,6 +69,6 @@ export const BookPrice = styled.p`
   padding: 0 10px;
   margin-top: auto;
   ${Typography.H3};
-  color: ${Color.Primary};
+  color: ${Color.Primery_Text};
   align-content: flex-end;
 `;

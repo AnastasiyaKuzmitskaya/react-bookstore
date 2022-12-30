@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { LogoIcon } from "assets";
-import { Color, Margin, Media } from "ui";
+import { Color, Margin } from "ui";
 
 export const StyledHeader = styled.div`
-  position:relative;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,6 +13,8 @@ export const StyledHeader = styled.div`
 `;
 
 export const LogoIcons = styled(LogoIcon)`
+  background: none;
+  border: none;
   cursor: pointer;
 
   :hover path {
@@ -22,10 +24,5 @@ export const LogoIcons = styled(LogoIcon)`
   :active path {
     fill: ${Color.Primary};
     transition: 0.3s ease;
-  }
-
-  ${Media.SM} {
-    width: 122px;
-    height: 25px;
   }
 `;

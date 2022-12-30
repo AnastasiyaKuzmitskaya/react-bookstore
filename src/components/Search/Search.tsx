@@ -1,6 +1,7 @@
 import { SearchLogoIcon } from "assets";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+
 import { SearchButton, SearchInput, StyledForm } from "./styles";
 
 export const Search = () => {
