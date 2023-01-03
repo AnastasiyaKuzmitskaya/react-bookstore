@@ -22,7 +22,7 @@ const StyledFavoriteButton = styled.button<{ $isFavorites: boolean }>`
 const Heard = styled(FavoritesIcon)<{ $isFavorites: boolean }>`
   width: 24px;
   height: 24px;
-  stroke: ${({ $isFavorites }) => ($isFavorites ?  Color.Red:Color.White)};
+  stroke: ${({ $isFavorites }) => ($isFavorites ? Color.Red : Color.White)};
   fill: ${({ $isFavorites }) => ($isFavorites ? Color.White : Color.Red)};
   border: none;
   cursor: pointer;
