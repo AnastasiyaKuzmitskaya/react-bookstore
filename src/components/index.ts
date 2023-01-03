@@ -7,6 +7,12 @@ import { Navbar } from "./Navbar/Navbar";
 import { TogglerTheme } from "./TogglerTheme/TogglerTheme";
 import { MainTemplate } from "./MainTemplate/MainTemplate";
 import { Footer } from "./Footer/Footer";
+import { Title } from "./Title/Title";
+import { DetailsBook } from "./DetailsBook/DetailsBook";
+import { Loading } from "./Loading/Loading";
+import { ArrowBack } from "./ArrowBack/ArrowBack";
+import { Rating } from "./Rating/Rating";
+import {FavoriteButton} from "./FavoriteButton/FavoriteButton";
 
 export {
   BookItem,
@@ -18,4 +24,10 @@ export {
   TogglerTheme,
   MainTemplate,
   Footer,
+  Title,
+  DetailsBook,
+  Loading,
+  ArrowBack,
+  Rating,
+  FavoriteButton
 };

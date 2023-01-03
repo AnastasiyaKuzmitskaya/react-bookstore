@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Margin, Media, Typography } from "ui";
 
-export const Title = styled.h1`
+export const StyledTitle = styled.h1`
   margin-bottom: ${Margin.SuperLarge};
   ${Typography.H1};
 

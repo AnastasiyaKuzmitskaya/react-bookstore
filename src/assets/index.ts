@@ -5,5 +5,15 @@ import { ReactComponent as ShopBagIcon } from "./icons/shopping-bag.svg";
 import { ReactComponent as UseAccountIcon } from "./icons/user.svg";
 import { ReactComponent as SunIcon } from "./icons/lights-sun.svg";
 import { ReactComponent as MoonIcon } from "./icons/moon.svg";
+import { ReactComponent as ArrowBackIcon } from "./icons/arrow-back.svg";
 
-export { LogoIcon, SearchLogoIcon, FavoritesIcon, ShopBagIcon, UseAccountIcon, SunIcon, MoonIcon };
+export {
+  LogoIcon,
+  SearchLogoIcon,
+  FavoritesIcon,
+  ShopBagIcon,
+  UseAccountIcon,
+  SunIcon,
+  MoonIcon,
+  ArrowBackIcon,
+};

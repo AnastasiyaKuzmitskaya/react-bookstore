@@ -40,4 +40,4 @@ const newBooksSlice = createSlice({
 });
 
 
-export const newBooksReducer = newBooksSlice.reducer;
+export default newBooksSlice.reducer;

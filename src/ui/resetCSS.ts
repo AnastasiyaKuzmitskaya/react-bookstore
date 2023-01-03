@@ -124,13 +124,7 @@ export const resetCSS = css`
     -webkit-appearance: button;
   }
 
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
+
 
   button:-moz-focusring,
   [type="button"]:-moz-focusring,

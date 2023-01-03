@@ -8,7 +8,7 @@ interface IProps {
 export const BookItem = ({ book }: IProps) => {
   return (
     <StyledBookItem key={book.isbn13}>
-      <StyledLink to={`/react-bookstore/book/${book.isbn13}`}>
+      <StyledLink to={`/book/${book.isbn13}`}>
         <BookImg src={book.image} alt={book.title} />
         <BookTitle>{book.title}</BookTitle>
         <BookSubtitle>{book.subtitle}</BookSubtitle>

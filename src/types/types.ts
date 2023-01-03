@@ -4,6 +4,7 @@ export interface IBookDetails {
   book: IBookDetailsApi;
   error: null | string;
   isLoading: boolean;
+
 }
 
 export interface INewBooks {

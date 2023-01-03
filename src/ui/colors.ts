@@ -13,4 +13,5 @@ export enum Color {
   Primery_Text = "var(--primary-text)",
   Primery_Bg = "var(--primary-bg)",
   Secondary_Text = "var(--secondary-text)",
+  Arrow_back="var(--primary-arrow)",
 }

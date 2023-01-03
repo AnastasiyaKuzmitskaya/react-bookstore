@@ -1,5 +1,5 @@
 import { HomePage } from "./HomePages/HomePage";
-import { DetailsBookPage } from "./DetailsBookPage";
+import { DetailsBookPage } from "./DetailsBookPage/DetailsBookPage";
 import { AccountPage } from "./AccountPage/AccountPage";
 import { ShopBagPage } from "./ShopBagPage/ShopBagPage";
 import { FavoritesPage } from "./FavoritesPage/FavoritesPage";

@@ -1,3 +1,3 @@
 import { RootState } from "store";
 
-export const selectTheme = (state: RootState) => state.togglerTheme;
+export const selectTheme = (state: RootState) => state.persistedReducer.togglerTheme;

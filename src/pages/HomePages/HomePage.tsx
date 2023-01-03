@@ -1,7 +1,7 @@
 import { BooksList } from "components";
 import React, { useEffect } from "react";
 import { featchNewBooks, getBooks, useAppDispatch, useAppSelector } from "store";
-import { Title } from "./style";
+import { Title } from "components";
 
 export const HomePage = () => {
   const dispatch = useAppDispatch();
@@ -12,7 +12,8 @@ export const HomePage = () => {
 
   return (
     <>
-      <Title>New Releases Books</Title>
+      {" "}
+      <Title title="New Releases Books" />
       <BooksList books={books} />
     </>
   );
