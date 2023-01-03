@@ -1,8 +1,7 @@
-import { ArrowBackIcon } from "assets";
 import { useWindowSize } from "hooks";
 import { useNavigate } from "react-router-dom";
 import { Breakpoint, Color } from "ui";
-import { ButtonArrow } from "./styles";
+import { ButtonArrow, StyledArrowIcon } from "./styles";
 
 export const ArrowBack = () => {
   const navigate = useNavigate();
@@ -14,11 +13,7 @@ export const ArrowBack = () => {
 
   return (
     <ButtonArrow onClick={handleBack}>
-      <ArrowBackIcon
-        width={width < Breakpoint.MD ? "30" : "40"}
-        fill={Color.Arrow_back}
-        stroke={Color.Arrow_back}
-      />
+      <StyledArrowIcon width={width < Breakpoint.MD ? "30" : "40"} fill={Color.Primery_Text} />
     </ButtonArrow>
   );
 };

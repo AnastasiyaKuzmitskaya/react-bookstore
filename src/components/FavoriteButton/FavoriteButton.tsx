@@ -7,14 +7,14 @@ import {
   useAppDispatch,
   useAppSelector,
 } from "store";
-import { Heard, StyledFavoriteButton } from "./styles";
+import { Color } from "ui";
+import { Heart, StyledFavoriteButton } from "./styles";
 
 interface IProps {
   book: IBookDetailsApi;
-  isFavorite: boolean;
 }
 
-export const FavoriteButton = ({ book, isFavorite }: IProps) => {
+export const FavoriteButton = ({ book }: IProps) => {
   const [isFavorites, setIsFavorite] = useState<boolean>(false);
   const dispatch = useAppDispatch();
   const { favoritesBook } = useAppSelector(getFavoritesBooks);
@@ -36,8 +36,8 @@ export const FavoriteButton = ({ book, isFavorite }: IProps) => {
   }, [book.isbn13, favoritesBook]);
 
   return (
-    <StyledFavoriteButton type="button" onClick={handleAddFavorites} $isFavorites={isFavorite}>
-      <Heard $isFavorites={isFavorites} />
+    <StyledFavoriteButton type="button" onClick={handleAddFavorites}>
+      {isFavorites ? <Heart fill={Color.Red} /> : <Heart fill={Color.White} />}
     </StyledFavoriteButton>
   );
 };

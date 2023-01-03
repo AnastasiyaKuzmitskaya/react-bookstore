@@ -5,11 +5,11 @@ export const themeLight = css`
   --primary-text: ${Color.Primary};
   --primary-bg: ${Color.White};
   --secondary-text: ${Color.Secondary};
-  --primary-arrow: ${Color.Primary};
+  --primary-arrow: ${Color.White};
 `;
 export const themeDark = css`
   --primary-text: ${Color.White};
   --primary-bg: ${Color.Primary_Light};
   --secondary-text: ${Color.Gray};
-  --primary-arrow: ${Color.Lighte};
+  --primary-arrow: ${Color.Primary_Light};
 `;

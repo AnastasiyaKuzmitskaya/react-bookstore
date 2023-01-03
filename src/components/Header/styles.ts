@@ -8,8 +8,8 @@ export const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: ${Margin.SuperLarge};
-  margin-top: ${Margin.Medium};
+  padding-bottom: ${Margin.Medium};
+  margin: ${Margin.Medium} 0 ${Margin.ExtraLarge} 0;
   border-bottom: 2px solid ${Color.Gray};
 `;
 

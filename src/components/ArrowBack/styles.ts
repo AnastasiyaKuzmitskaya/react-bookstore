@@ -1,14 +1,21 @@
+import { ArrowBackIcon } from "assets";
 import styled from "styled-components";
-import { Media } from "ui";
+import { Margin, Media } from "ui";
 
-export const ButtonArrow = styled.s`
+export const ButtonArrow = styled.button`
   text-align: start;
   width: 50px;
-  margin-bottom: 32px;
+  margin-bottom: ${Margin.ExtraMedium};
   background: none;
   border: none;
   cursor: pointer;
+  
   ${Media.MD} {
-    margin-bottom: 24px;
+    margin-bottom: ${Margin.Medium};
   }
+`;
+
+export const StyledArrowIcon=styled(ArrowBackIcon)`
+ background: none;
+  border: none;
 `;

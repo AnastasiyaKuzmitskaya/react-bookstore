@@ -96,7 +96,7 @@ export const resetCSS = css`
     list-style: none;
   }
 
-  button,
+  /* button,
   input,
   optgroup,
   select,
@@ -105,33 +105,33 @@ export const resetCSS = css`
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
-  }
+  } */
 
-  button,
+  /* button,
   input {
     overflow: visible;
   }
-
-  button,
+ */
+ /*  button,
   select {
     text-transform: none;
-  }
+  } */
 
-  button,
+ /*  button,
   [type="button"],
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
-  }
+  } */
 
 
-
+/* 
   button:-moz-focusring,
   [type="button"]:-moz-focusring,
   [type="reset"]:-moz-focusring,
   [type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
-  }
+  } */
 
   fieldset {
     padding: 0.35em 0.75em 0.625em;

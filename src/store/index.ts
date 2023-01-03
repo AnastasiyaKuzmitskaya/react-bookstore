@@ -6,6 +6,7 @@ import { store } from "./store";
 import { fetchBookDetails } from "./slices/bookDetailsSlice";
 import { getFavoritesBooks } from "./selectors/favoritesSelector";
 import { removeFavorite, addFavorites } from "./slices/favoritesSlise";
+import { persistor } from "./store";
 
 export type { AppDispatch, RootState };
 export {
@@ -17,5 +18,6 @@ export {
   fetchBookDetails,
   getFavoritesBooks,
   addFavorites,
-  removeFavorite
+  removeFavorite,
+  persistor,
 };

@@ -1,12 +1,7 @@
 import { FavoriteButton, Rating } from "components";
 import { IBookDetailsApi } from "services";
-import { useToggle} from "hooks";
-import {
-  HiChevronUp,
-  HiChevronDown,
-  
-
-} from "react-icons/hi";
+import { useToggle } from "hooks";
+import { HiChevronUp, HiChevronDown } from "react-icons/hi";
 import {
   Attribute,
   BookDetails,
@@ -27,7 +22,7 @@ interface IProps {
 
 export const DetailsBook = ({ book }: IProps) => {
   const [isActive, setIsActive] = useToggle();
- 
+
   const handleDetails = (): void => {
     setIsActive();
   };
@@ -35,7 +30,7 @@ export const DetailsBook = ({ book }: IProps) => {
     <StyledDetailsBook>
       <BookImageContainer>
         <BookImage src={book.image} alt={book.title} />
-        <FavoriteButton book={book} isFavorite={false} />
+        <FavoriteButton book={book} />
       </BookImageContainer>
 
       <BookDetails>
@@ -86,7 +81,7 @@ export const DetailsBook = ({ book }: IProps) => {
         <MoreDetails onClick={handleDetails}>
           {isActive ? (
             <InfoArrow>
-              More details <HiChevronUp  />
+              More details <HiChevronUp />
             </InfoArrow>
           ) : (
             <InfoArrow>

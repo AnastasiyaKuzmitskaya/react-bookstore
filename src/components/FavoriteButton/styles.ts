@@ -1,8 +1,8 @@
-import { FavoritesIcon } from "assets";
 import styled from "styled-components";
 import { Color } from "ui";
+import { FavoritesIcon } from "assets";
 
-const StyledFavoriteButton = styled.button<{ $isFavorites: boolean }>`
+const StyledFavoriteButton = styled.button`
   position: absolute;
   top: 0;
   right: 0;
@@ -14,16 +14,14 @@ const StyledFavoriteButton = styled.button<{ $isFavorites: boolean }>`
   width: 56px;
   height: 56px;
   padding: 16px;
-  background: ${({ $isFavorites }) => ($isFavorites ? "none" : Color.Primary)};
+  background: ${Color.Primary};
   border: none;
   cursor: pointer;
 `;
 
-const Heard = styled(FavoritesIcon)<{ $isFavorites: boolean }>`
+const Heart = styled(FavoritesIcon)`
   width: 24px;
   height: 24px;
-  stroke: ${({ $isFavorites }) => ($isFavorites ? Color.Red : Color.White)};
-  fill: ${({ $isFavorites }) => ($isFavorites ? Color.White : Color.Red)};
   border: none;
   cursor: pointer;
   :hover,
@@ -32,4 +30,4 @@ const Heard = styled(FavoritesIcon)<{ $isFavorites: boolean }>`
   }
 `;
 
-export { StyledFavoriteButton, Heard };
+export { StyledFavoriteButton, Heart };
