@@ -1,4 +1,4 @@
-import { FavoriteButton, Rating, BookTabs } from "components";
+import { FavoriteButton, Rating } from "components";
 import { IBookDetailsApi } from "services";
 import { useToggle } from "hooks";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";

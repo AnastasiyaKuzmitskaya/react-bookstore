@@ -8,8 +8,8 @@ const initialState: INewBooks = {
   isLoading: false,
 };
 
-export const featchNewBooks = createAsyncThunk<INewBookApi[]>(
-  "newBooks/featchNewBooks",
+export const fetchNewBooks = createAsyncThunk<INewBookApi[]>(
+  "newBooks/fetchNewBooks",
   async () => {
     return (await bookstoreAPI.getNewBooks()).books;
   },
@@ -20,18 +20,18 @@ const newBooksSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(featchNewBooks.pending, (state) => {
+    builder.addCase(fetchNewBooks.pending, (state) => {
       state.isLoading = true;
     });
 
-    builder.addCase(featchNewBooks.fulfilled, (state, action) => {
+    builder.addCase(fetchNewBooks.fulfilled, (state, action) => {
       if (action.payload) {
         state.isLoading = false;
         state.books = action.payload;
       }
     });
 
-    builder.addCase(featchNewBooks.rejected, (state, action: any) => {
+    builder.addCase(fetchNewBooks.rejected, (state, action: any) => {
       state.error = action.payload;
       state.isLoading = false;
       state.books = action.payload;

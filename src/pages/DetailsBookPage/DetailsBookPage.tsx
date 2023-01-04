@@ -1,11 +1,12 @@
 import { ArrowBack, BookTabs, DetailsBook, Loading, SocialsIcons, Title } from "components";
+import { BookSlider } from "components/BookSlider/BookSlider";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchBookDetails, useAppDispatch, useAppSelector } from "store";
 import { getBookDetails } from "store/selectors/bookDetailsSelector";
 
 export const DetailsBookPage = () => {
-  const { isbn= "" } = useParams();
+  const { isbn = "" } = useParams();
   const { error, isLoading, book } = useAppSelector(getBookDetails);
   const dispatch = useAppDispatch();
   const { title } = book;
@@ -26,9 +27,11 @@ export const DetailsBookPage = () => {
     <>
       <ArrowBack />
       <Title title={title} />
-      <DetailsBook book={book}  />
+      <DetailsBook book={book} />
       <BookTabs book={book} />
-      <SocialsIcons/>
-</>
+      <SocialsIcons />
+      <Title title="Similar Books" />
+      <BookSlider />
+    </>
   );
 };
