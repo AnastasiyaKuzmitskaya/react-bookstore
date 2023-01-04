@@ -1,4 +1,4 @@
-import { ArrowBack, DetailsBook, Loading, Title } from "components";
+import { ArrowBack, BookTabs, DetailsBook, Loading, SocialsIcons, Title } from "components";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchBookDetails, useAppDispatch, useAppSelector } from "store";
@@ -27,6 +27,8 @@ export const DetailsBookPage = () => {
       <ArrowBack />
       <Title title={title} />
       <DetailsBook book={book}  />
-    </>
+      <BookTabs book={book} />
+      <SocialsIcons/>
+</>
   );
 };

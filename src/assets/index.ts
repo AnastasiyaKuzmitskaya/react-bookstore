@@ -6,6 +6,8 @@ import { ReactComponent as UseAccountIcon } from "./icons/user.svg";
 import { ReactComponent as SunIcon } from "./icons/lights-sun.svg";
 import { ReactComponent as MoonIcon } from "./icons/moon.svg";
 import { ReactComponent as ArrowBackIcon } from "./icons/arrow-back.svg";
+import { ReactComponent as FacebookIcon } from "./icons/facebook.svg";
+import { ReactComponent as TwitterIcon } from "./icons/twitter.svg";
 
 export {
   LogoIcon,
@@ -16,4 +18,6 @@ export {
   SunIcon,
   MoonIcon,
   ArrowBackIcon,
+  FacebookIcon,
+  TwitterIcon,
 };

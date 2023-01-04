@@ -6,7 +6,6 @@ export const StyledTabBar = styled.div`
   flex-direction: column;
   width: 100%;
   margin-bottom: ${Margin.SuperLarge};
-  border-bottom: 1px solid ${Color.Gray};
   ${Media.MD} {
     margin-bottom: ${Margin.SuperLargeMobile};
   }
@@ -44,14 +43,14 @@ export const Container = styled.div`
   }
 `;
 export const TabDescription = styled.p`
-  padding-bottom: 60px;
-  padding-left: 20px;
+  padding-left: 10px;
   ${Typography.S1}
   font-weight: 400;
+  text-overflow: clip;
+  overflow: hidden;
 `;
 export const ContainerDescription = styled.div`
-  height: 200px;
-
+  height: auto;
   @media (max-width: 576px) {
     height: auto;
   }

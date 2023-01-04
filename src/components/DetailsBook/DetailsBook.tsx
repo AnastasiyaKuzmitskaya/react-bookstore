@@ -93,7 +93,6 @@ export const DetailsBook = ({ book }: IProps) => {
       {/*   <CartButton type="button" onClick={handleCartButton}>
           add to cart
         </CartButton> */}
-      <BookTabs book={book} />
     </StyledDetailsBook>
   );
 };

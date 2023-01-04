@@ -14,7 +14,7 @@ import { ArrowBack } from "./ArrowBack/ArrowBack";
 import { Rating } from "./Rating/Rating";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { BookTabs } from "./BookTabs/BookTabs";
-
+import {SocialsIcons} from "./SocialsIcons/SocialsIcon";
 export {
   BookItem,
   BooksList,
@@ -32,4 +32,5 @@ export {
   Rating,
   FavoriteButton,
   BookTabs,
+  SocialsIcons
 };
