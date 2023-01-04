@@ -12,7 +12,8 @@ import { DetailsBook } from "./DetailsBook/DetailsBook";
 import { Loading } from "./Loading/Loading";
 import { ArrowBack } from "./ArrowBack/ArrowBack";
 import { Rating } from "./Rating/Rating";
-import {FavoriteButton} from "./FavoriteButton/FavoriteButton";
+import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
+import { BookTabs } from "./BookTabs/BookTabs";
 
 export {
   BookItem,
@@ -29,5 +30,6 @@ export {
   Loading,
   ArrowBack,
   Rating,
-  FavoriteButton
+  FavoriteButton,
+  BookTabs,
 };

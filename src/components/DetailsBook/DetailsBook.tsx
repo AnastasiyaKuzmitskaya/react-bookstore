@@ -1,4 +1,4 @@
-import { FavoriteButton, Rating } from "components";
+import { FavoriteButton, Rating, BookTabs } from "components";
 import { IBookDetailsApi } from "services";
 import { useToggle } from "hooks";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";
@@ -90,6 +90,10 @@ export const DetailsBook = ({ book }: IProps) => {
           )}
         </MoreDetails>
       </BookDetails>
+      {/*   <CartButton type="button" onClick={handleCartButton}>
+          add to cart
+        </CartButton> */}
+      <BookTabs book={book} />
     </StyledDetailsBook>
   );
 };

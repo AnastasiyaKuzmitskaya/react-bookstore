@@ -1,0 +1,58 @@
+import styled from "styled-components";
+import { Color, Margin, Media, Typography } from "ui";
+
+export const StyledTabBar = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: ${Margin.SuperLarge};
+  border-bottom: 1px solid ${Color.Gray};
+  ${Media.MD} {
+    margin-bottom: ${Margin.SuperLargeMobile};
+  }
+`;
+
+export const TabItem = styled.button<{ isActive?: boolean }>`
+  ${Typography.S1}
+  color: ${Color.Primery_Text};
+  margin-bottom: ${Margin.SuperLarge};
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-bottom: ${({ isActive }) => isActive && `1px solid ${Color.Red}`};
+
+  :hover {
+    color: ${Color.Primary};
+    scale: 1.1;
+  }
+  &:focus {
+    color: ${Color.Primary};
+  }
+  ${Media.MD} {
+    margin-bottom: ${Margin.SuperLargeMobile};
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+`;
+export const TabDescription = styled.p`
+  padding-bottom: 60px;
+  padding-left: 20px;
+  ${Typography.S1}
+  font-weight: 400;
+`;
+export const ContainerDescription = styled.div`
+  height: 200px;
+
+  @media (max-width: 576px) {
+    height: auto;
+  }
+`;
