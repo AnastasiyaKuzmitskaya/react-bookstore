@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 import { selectTheme } from "store/selectors/theme-selector";
-import { setTheme } from "store/slices/theme-slice";
+import { setTheme } from "store/features/theme-slice";
 import { Color } from "ui";
 import { StyledToggler } from "./styles";
 
