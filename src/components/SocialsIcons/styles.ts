@@ -14,17 +14,17 @@ const IconItem = styled.a`
   margin-right: 24px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  &:last-child {
+  :last-child {
     margin-right: 0;
   }
 
-  &:active {
+  :active {
     path {
       stroke: ${Color.Lighte};
       fill: ${Color.Primary};
     }
   }
-  &:hover {
+  :hover {
     path {
       fill: ${Color.Secondary};
     }

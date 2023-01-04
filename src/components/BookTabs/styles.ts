@@ -30,16 +30,18 @@ export const TabItem = styled.button<{ isActive?: boolean }>`
   }
   ${Media.MD} {
     margin-bottom: ${Margin.SuperLargeMobile};
+    
   }
 `;
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 60px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 160px);
 
   @media (max-width: 576px) {
-    flex-direction: column;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 10px;
   }
 `;
 export const TabDescription = styled.p`
