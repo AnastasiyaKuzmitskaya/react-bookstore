@@ -6,10 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { fetchNewBooks, getBooks, useAppDispatch, useAppSelector } from "store";
 import { StyledSlider } from "./styles";
 
-
-
 export const BookSlider = () => {
-  
   const { books } = useAppSelector(getBooks);
   const dispatch = useAppDispatch();
 

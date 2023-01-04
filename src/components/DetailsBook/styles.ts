@@ -18,17 +18,15 @@ const StyledDetailsBook = styled.div`
 const BookImageContainer = styled.div`
   position: relative;
   width: 40%;
-  
+
   ${Media.MD} {
     width: 100%;
   }
 `;
 const BookImage = styled.img`
-  
   width: 100%;
   background-color: ${Color.Orange};
 `;
-
 
 const BookDetails = styled.div`
   width: 50%;
@@ -78,6 +76,7 @@ const MoreDetails = styled.button`
   display: flex;
   align-content: center;
   margin-top: 10px;
+  margin-bottom: ${Margin.ExtraLargeMobile};
   ${Typography.S1}
   background: transparent;
   color: ${Color.Primery_Text};
@@ -94,6 +93,27 @@ const InfoArrow = styled.span`
   align-items: center;
   justify-content: center;
 `;
+
+const CartButton = styled.button`
+  width: 100%;
+  padding: 15px 10px;
+  margin: 0 auto;
+
+  ${Typography.H3};
+  color: ${Color.Button_Text};
+  text-transform: uppercase;
+  text-align: center;
+  background: ${Color.Primery_Text};
+  transition: all 0.5s ease-out;
+  :hover {
+    background: ${Color.Hover};
+  }
+  :active {
+    background: ${Color.Button_Color};
+  }
+`;
+
+export { CartButton };
 
 export {
   StyledDetailsBook,

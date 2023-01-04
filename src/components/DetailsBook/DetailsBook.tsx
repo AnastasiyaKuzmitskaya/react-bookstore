@@ -9,6 +9,7 @@ import {
   BookImageContainer,
   BookInfo,
   BookPriceWrapper,
+  CartButton,
   InfoArrow,
   MoreDetails,
   Parameters,
@@ -89,10 +90,8 @@ export const DetailsBook = ({ book }: IProps) => {
             </InfoArrow>
           )}
         </MoreDetails>
+        <CartButton type="button">add to cart</CartButton>
       </BookDetails>
-      {/*   <CartButton type="button" onClick={handleCartButton}>
-          add to cart
-        </CartButton> */}
     </StyledDetailsBook>
   );
 };
