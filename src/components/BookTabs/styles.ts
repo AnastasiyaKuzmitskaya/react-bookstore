@@ -30,7 +30,6 @@ export const TabItem = styled.button<{ isActive?: boolean }>`
   }
   ${Media.MD} {
     margin-bottom: ${Margin.SuperLargeMobile};
-    
   }
 `;
 

@@ -22,7 +22,7 @@ const StyledForm = styled.form`
 
 const SearchInput = styled.input`
   width: 100%;
-  max-width: 480px;
+  max-width: 542px;
 
   color: ${Color.Secondary};
   border: none;
@@ -44,9 +44,12 @@ const SearchInput = styled.input`
 
 
 const SearchButton = styled(motion.button)`
+  width: 100%;
+  max-width: 24px;
   background: none;
   border: none;
   cursor: pointer;
+  text-align: center;
 `;
 
 export { StyledForm, SearchInput, SearchButton };

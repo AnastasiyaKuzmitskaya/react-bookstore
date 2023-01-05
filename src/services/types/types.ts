@@ -18,12 +18,12 @@ interface INewBooksApi {
 }
 
 interface NewBooksResponse {
-  error: string;
-  total: string;
-  books: INewBooksApi[];
+  error: string| null;
+  total: string| null;
+  books: INewBookApi[];
 }
 interface ISearchBooksApi extends NewBooksResponse {
-  page: string;
+  page: string|null;
 }
 
 interface IBookDetailsApi {

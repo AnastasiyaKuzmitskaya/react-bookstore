@@ -5,7 +5,7 @@ import { Title } from "components";
 
 export const HomePage = () => {
   const dispatch = useAppDispatch();
-  const { books } = useAppSelector(getBooks);
+  const { books, error, isLoading, } = useAppSelector(getBooks);
   useEffect(() => {
     dispatch(fetchNewBooks());
   }, [dispatch]);
@@ -14,7 +14,7 @@ export const HomePage = () => {
     <>
       {" "}
       <Title title="New Releases Books" />
-      <BooksList books={books} />
+      <BooksList books={books} isLoading={isLoading} error={error} />
     </>
   );
 };

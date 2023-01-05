@@ -12,7 +12,10 @@ class restBookStoreApi {
     return data;
   }
 
-  public async getBookBySearch(query: string, page: string | null = "1"): Promise<ISearchBooksApi> {
+  public async getBookBySearch(
+    query: string | null,
+    page: string | null = "1",
+  ): Promise<ISearchBooksApi> {
     const { data } = await this.API.get<ISearchBooksApi>(`search/${query}/${page}`);
     return data;
   }

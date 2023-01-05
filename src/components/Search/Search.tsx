@@ -4,12 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 import { SearchButton, SearchInput, StyledForm } from "./styles";
 
+
 export const Search = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (data: any) => {
-    navigate(`/bookstore/search/${data.query}/1`);
+    navigate(`search/${data.searchValue}/1`);
   };
 
   return (

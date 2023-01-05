@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color, Margin, Media } from "ui";
+import { Color, Margin, Media, Typography } from "ui";
 
 export const StyledBookList = styled.ul`
   display: grid;
@@ -18,4 +18,9 @@ export const StyledBookList = styled.ul`
     padding-bottom: ${Margin.ExtraLargeMobile};
     margin-bottom: ${Margin.SuperLargeMobile};
   }
+`;
+
+export const ErrorMassage = styled.h2`
+  ${Typography.H3};
+  margin-top: 75px;
 `;

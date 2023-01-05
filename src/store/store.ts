@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import bookDetailsReduser from "./features/bookDetailsSlice";
 import newBooksReducer from "./features/newBooksSlice";
 import { themeReducer } from "./features/theme-slice";
+import searchReducer from "./features/searchSlice";
 import {
   FLUSH,
   PAUSE,
@@ -25,6 +26,7 @@ const rootReducer = combineReducers({
   togglerTheme: themeReducer,
   bookDetails: bookDetailsReduser,
   favorites: favoritesReduser,
+  search: searchReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

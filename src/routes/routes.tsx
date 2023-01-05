@@ -1,6 +1,6 @@
 export enum ROUTE {
   HOME = "/react-bookstore",
-  SEARCH = "search/:query/:page",
+  SEARCH = "search/:page",
   BOOK_DETAILS = "book/:isbn",
   FAVORITES = "favorites",
   ACCOUNT = "account",
