@@ -6,7 +6,9 @@ import { FavoritesPage } from "./FavoritesPage/FavoritesPage";
 import { RegisterPage } from "./RegisterPage/RegisterPage";
 import { ResetPasswordPage } from "./ResetPasswordPage/ResetPasswordPage";
 import { SearchPage } from "./SearchPage/SearchPage";
-import { SignIn } from "./SignIn/SignIn";
+import { SignInPage } from "./SignInPage/SignInPage";
+import { SignUpPage } from "./SignUpPage/SignUpPage";
+import{NotFoundPage} from "./NotFoundPage/NotFoundPage";
 
 export {
   HomePage,
@@ -17,5 +19,7 @@ export {
   RegisterPage,
   ResetPasswordPage,
   SearchPage,
-  SignIn,
+  SignInPage,
+  SignUpPage,
+  NotFoundPage
 };

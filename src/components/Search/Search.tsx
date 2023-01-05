@@ -10,7 +10,7 @@ export const Search = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data: any) => {
-    navigate(`search/${data.searchValue}/1`);
+    navigate(`/react-bookstore/search/${data.query}/1`);
   };
 
   return (

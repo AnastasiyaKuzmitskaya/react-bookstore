@@ -27,6 +27,8 @@ export const DetailsBook = ({ book }: IProps) => {
   const handleDetails = (): void => {
     setIsActive();
   };
+
+ 
   return (
     <StyledDetailsBook>
       <BookImageContainer>
@@ -90,7 +92,7 @@ export const DetailsBook = ({ book }: IProps) => {
             </InfoArrow>
           )}
         </MoreDetails>
-        <CartButton type="button">add to cart</CartButton>
+        <CartButton type="button" >add to cart</CartButton>
       </BookDetails>
     </StyledDetailsBook>
   );
