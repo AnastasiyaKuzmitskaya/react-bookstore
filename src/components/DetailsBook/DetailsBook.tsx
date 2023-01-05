@@ -1,4 +1,4 @@
-import { FavoriteButton, Rating } from "components";
+import { FavoriteButton, ModalWindow, Rating } from "components";
 import { IBookDetailsApi } from "services";
 import { useToggle } from "hooks";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";
@@ -23,12 +23,12 @@ interface IProps {
 
 export const DetailsBook = ({ book }: IProps) => {
   const [isActive, setIsActive] = useToggle();
+  const [isOpen, setIsOpen] = useToggle();
 
   const handleDetails = (): void => {
     setIsActive();
   };
 
- 
   return (
     <StyledDetailsBook>
       <BookImageContainer>
@@ -92,7 +92,18 @@ export const DetailsBook = ({ book }: IProps) => {
             </InfoArrow>
           )}
         </MoreDetails>
-        <CartButton type="button" >add to cart</CartButton>
+        <CartButton type="button" onClick={setIsOpen}>
+          add to cart
+        </CartButton>
+        <ModalWindow
+          isOpen={isOpen}
+          status={"error"}
+          message={
+            // eslint-disable-next-line max-len
+            "you are not a user of the site.To add a book to the cart, you need to go through authorization"
+          }
+          handleModal={setIsOpen}
+        />
       </BookDetails>
     </StyledDetailsBook>
   );

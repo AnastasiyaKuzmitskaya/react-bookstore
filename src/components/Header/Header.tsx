@@ -7,6 +7,7 @@ import { useWindowSize } from "hooks";
 
 export const Header = () => {
   const { width = 0 } = useWindowSize();
+
   return (
     <StyledHeader>
       <LogoWrapper to={ROUTE.HOME}>

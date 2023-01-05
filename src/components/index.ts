@@ -14,7 +14,10 @@ import { ArrowBack } from "./ArrowBack/ArrowBack";
 import { Rating } from "./Rating/Rating";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { BookTabs } from "./BookTabs/BookTabs";
-import {SocialsIcons} from "./SocialsIcons/SocialsIcon";
+import { SocialsIcons } from "./SocialsIcons/SocialsIcon";
+import { Portal, TargetPortal } from "./Portal/Portal";
+import { ModalWindow } from "./ModalWindow/ModalWindow";
+
 export {
   BookItem,
   BooksList,
@@ -32,5 +35,8 @@ export {
   Rating,
   FavoriteButton,
   BookTabs,
-  SocialsIcons
+  SocialsIcons,
+  Portal,
+  TargetPortal,
+  ModalWindow
 };

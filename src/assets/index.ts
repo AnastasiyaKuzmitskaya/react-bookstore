@@ -8,6 +8,8 @@ import { ReactComponent as MoonIcon } from "./icons/moon.svg";
 import { ReactComponent as ArrowBackIcon } from "./icons/arrow-back.svg";
 import { ReactComponent as FacebookIcon } from "./icons/facebook.svg";
 import { ReactComponent as TwitterIcon } from "./icons/twitter.svg";
+import WelcomeBookWodal from "./images/welcome-book.png";
+import  BookModal from "./icons/books-modal.svg";
 
 export {
   LogoIcon,
@@ -20,4 +22,7 @@ export {
   ArrowBackIcon,
   FacebookIcon,
   TwitterIcon,
+  WelcomeBookWodal,
+  BookModal
+
 };
