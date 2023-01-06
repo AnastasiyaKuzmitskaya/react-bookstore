@@ -1,12 +1,29 @@
 {
   "files": {
-    "main.js": "/react-bookstore/static/js/main.94acd5c9.js",
+    "main.css": "/react-bookstore/static/css/main.0c1ad6b4.css",
+    "main.js": "/react-bookstore/static/js/main.0ba70866.js",
+    "static/media/welcome-book.png": "/react-bookstore/static/media/welcome-book.89832443fb1d40628726.png",
     "static/media/logo.svg": "/react-bookstore/static/media/logo.4df062493d3c8a2d9a244c508c206884.svg",
+    "static/media/books-modal.svg": "/react-bookstore/static/media/books-modal.7922ba14da73f351ac26631e649e8029.svg",
+    "static/media/lights-sun.svg": "/react-bookstore/static/media/lights-sun.45eef4922839f37bb8501400e3189c0a.svg",
+    "static/media/slick.svg": "/react-bookstore/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/react-bookstore/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/moon.svg": "/react-bookstore/static/media/moon.a30d4342160b31b21a15eae5c4b2e870.svg",
+    "static/media/slick.ttf": "/react-bookstore/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/react-bookstore/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/arrow-back.svg": "/react-bookstore/static/media/arrow-back.b315f0d68bcde4649daca47b3bd7f372.svg",
+    "static/media/favorites.svg": "/react-bookstore/static/media/favorites.9700d2b547d4ab5d8a0c44a3736afd0c.svg",
+    "static/media/twitter.svg": "/react-bookstore/static/media/twitter.dcf8a3b85a6ec5dad6974d04b0a9b3d7.svg",
+    "static/media/shopping-bag.svg": "/react-bookstore/static/media/shopping-bag.3b3d17492cc2ad6c52b766b830dff840.svg",
     "static/media/search.svg": "/react-bookstore/static/media/search.fb7c71339a4b264dfb3e9806f3b103eb.svg",
+    "static/media/user.svg": "/react-bookstore/static/media/user.f95ce053779a6201d74bbfa54c39de4c.svg",
     "index.html": "/react-bookstore/index.html",
-    "main.94acd5c9.js.map": "/react-bookstore/static/js/main.94acd5c9.js.map"
+    "static/media/facebook.svg": "/react-bookstore/static/media/facebook.4513649098264a89095313db7b7602ef.svg",
+    "main.0c1ad6b4.css.map": "/react-bookstore/static/css/main.0c1ad6b4.css.map",
+    "main.0ba70866.js.map": "/react-bookstore/static/js/main.0ba70866.js.map"
   },
   "entrypoints": [
-    "static/js/main.94acd5c9.js"
+    "static/css/main.0c1ad6b4.css",
+    "static/js/main.0ba70866.js"
   ]
 }
