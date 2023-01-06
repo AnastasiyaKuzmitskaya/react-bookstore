@@ -1,4 +1,4 @@
-import { FavoriteButton, ModalWindow, Rating } from "components";
+import { FavoriteButton, ModalWindow, RatingStars } from "components";
 import { IBookDetailsApi } from "services";
 import { useToggle } from "hooks";
 import { HiChevronUp, HiChevronDown } from "react-icons/hi";
@@ -39,7 +39,7 @@ export const DetailsBook = ({ book }: IProps) => {
       <BookDetails>
         <BookPriceWrapper>
           <Price>{book.price === "$0.00" ? "Free" : book.price}</Price>
-          <Rating />
+          <RatingStars stars={book.rating} />
         </BookPriceWrapper>
 
         <BookInfo>

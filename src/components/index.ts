@@ -11,7 +11,7 @@ import { Title } from "./Title/Title";
 import { DetailsBook } from "./DetailsBook/DetailsBook";
 import { Loading } from "./Loading/Loading";
 import { ArrowBack } from "./ArrowBack/ArrowBack";
-import { Rating } from "./Rating/Rating";
+import { RatingStars } from "./RatingStars/RatingStars";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { BookTabs } from "./BookTabs/BookTabs";
 import { SocialsIcons } from "./SocialsIcons/SocialsIcon";
@@ -32,7 +32,7 @@ export {
   DetailsBook,
   Loading,
   ArrowBack,
-  Rating,
+  RatingStars,
   FavoriteButton,
   BookTabs,
   SocialsIcons,
