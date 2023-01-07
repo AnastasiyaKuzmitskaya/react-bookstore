@@ -8,8 +8,8 @@ import { getFavoritesBooks } from "./selectors/favoritesSelector";
 import { removeFavorite, addFavorites } from "./features/favoritesSlise";
 import { persistor } from "./store";
 import { getSearch } from "./selectors/searchSelector";
-import{fetchBooksBySearch} from "./features/searchSlice";
-
+import { fetchBooksBySearch } from "./features/searchSlice";
+import { getUser } from "./selectors/useSelector";
 
 export type { AppDispatch, RootState };
 export {
@@ -24,5 +24,6 @@ export {
   removeFavorite,
   persistor,
   getSearch,
-  fetchBooksBySearch
+  fetchBooksBySearch,
+  getUser,
 };

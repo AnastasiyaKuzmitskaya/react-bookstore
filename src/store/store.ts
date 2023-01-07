@@ -1,8 +1,9 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import bookDetailsReduser from "./features/bookDetailsSlice";
+import bookDetailsReducer from "./features/bookDetailsSlice";
 import newBooksReducer from "./features/newBooksSlice";
 import { themeReducer } from "./features/theme-slice";
 import searchReducer from "./features/searchSlice";
+import  userReducer from "./features/userSlice";
 import {
   FLUSH,
   PAUSE,
@@ -14,7 +15,7 @@ import {
   REHYDRATE,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import favoritesReduser from "./features/favoritesSlise";
+import favoritesReducer from "./features/favoritesSlise";
 const persistConfig = {
   key: "root",
   storage,
@@ -24,9 +25,10 @@ const persistConfig = {
 const rootReducer = combineReducers({
   newBooks: newBooksReducer,
   togglerTheme: themeReducer,
-  bookDetails: bookDetailsReduser,
-  favorites: favoritesReduser,
+  bookDetails: bookDetailsReducer,
+  favorites: favoritesReducer,
   search: searchReducer,
+  user: userReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
