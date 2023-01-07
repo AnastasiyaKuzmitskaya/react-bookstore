@@ -17,6 +17,9 @@ import { BookTabs } from "./BookTabs/BookTabs";
 import { SocialsIcons } from "./SocialsIcons/SocialsIcon";
 import { Portal, TargetPortal } from "./Portal/Portal";
 import { ModalWindow } from "./ModalWindow/ModalWindow";
+import { BurgerNavBar } from "./BurgerNavBar/BurgerNavBar";
+import { MenuDetailed } from "./MenuDetailed/MenuDetailed";
+import { RequareAuth } from "./RequareAuth/RequareAuth";
 
 export {
   BookItem,
@@ -38,5 +41,8 @@ export {
   SocialsIcons,
   Portal,
   TargetPortal,
-  ModalWindow
+  ModalWindow,
+  BurgerNavBar,
+  MenuDetailed,
+  RequareAuth,
 };

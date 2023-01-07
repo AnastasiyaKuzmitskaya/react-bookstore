@@ -9,7 +9,9 @@ import { ReactComponent as ArrowBackIcon } from "./icons/arrow-back.svg";
 import { ReactComponent as FacebookIcon } from "./icons/facebook.svg";
 import { ReactComponent as TwitterIcon } from "./icons/twitter.svg";
 import WelcomeBookWodal from "./images/welcome-book.png";
-import  BookModal from "./icons/books-modal.svg";
+import BookModal from "./icons/books-modal.svg";
+import { ReactComponent as BurgerMenuIcon } from "./icons/burger-menu.svg";
+import { ReactComponent as CloseIcon } from "./icons/cancel.svg";
 
 export {
   LogoIcon,
@@ -23,6 +25,7 @@ export {
   FacebookIcon,
   TwitterIcon,
   WelcomeBookWodal,
-  BookModal
-
+  BookModal,
+  BurgerMenuIcon,
+  CloseIcon,
 };

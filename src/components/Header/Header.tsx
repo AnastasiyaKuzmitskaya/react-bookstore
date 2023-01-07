@@ -1,5 +1,5 @@
 import { Logo, LogoWrapper, StyledHeader } from "./styles";
-import { Navbar, Search } from "components";
+import { BurgerNavBar, Navbar, Search } from "components";
 import { TogglerTheme } from "components";
 import { ROUTE } from "routes";
 import { Breakpoint } from "ui";
@@ -13,9 +13,14 @@ export const Header = () => {
       <LogoWrapper to={ROUTE.HOME}>
         <Logo width={width < Breakpoint.MD ? "122" : "137"} />
       </LogoWrapper>
-      <Search />
-      <Navbar />
-      <TogglerTheme />
+      {width > 768 && (
+        <>
+          <Search />
+          <TogglerTheme />
+          <Navbar />
+        </>
+      )}
+      <BurgerNavBar />
     </StyledHeader>
   );
 };

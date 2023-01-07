@@ -57,13 +57,16 @@ export const ModalInfo = styled.p`
   ${Typography.S1}
   color:${Color.Primary_Light};
   text-transform: capitalize;
+  
 `;
 
 export const CloseButton = styled.button`
-  justify-self: flex-end;
+  
   ${Typography.H1}
   color: ${Color.Button_Color};
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 `;
