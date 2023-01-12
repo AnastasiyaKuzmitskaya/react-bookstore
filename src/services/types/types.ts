@@ -17,13 +17,13 @@ interface INewBooksApi {
   url: string;
 }
 
-interface NewBooksResponse {
-  error: string| null;
-  total: string| null;
+interface INewBooksResponse {
+  error: string | null;
+  total: string | null;
   books: INewBookApi[];
 }
-interface ISearchBooksApi extends NewBooksResponse {
-  page: string|null;
+interface ISearchBooksApi extends INewBooksResponse {
+  page: string | null;
 }
 
 interface IBookDetailsApi {
@@ -48,16 +48,11 @@ interface IFormatBook {
   [format: string]: string;
 }
 
-interface ISearchResult {
-  searchValue: string;
-  page: string;
-}
 export type {
   INewBookApi,
   INewBooksApi,
   ISearchBooksApi,
   IBookDetailsApi,
   IFormatBook,
-  NewBooksResponse,
-  ISearchResult,
+  INewBooksResponse,
 };

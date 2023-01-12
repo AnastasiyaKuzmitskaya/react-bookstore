@@ -43,6 +43,7 @@ export const resetCSS = css`
 
   a {
     background-color: transparent;
+    text-decoration: none;
   }
 
   abbr[title] {

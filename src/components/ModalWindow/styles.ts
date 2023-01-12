@@ -57,11 +57,9 @@ export const ModalInfo = styled.p`
   ${Typography.S1}
   color:${Color.Primary_Light};
   text-transform: capitalize;
-  
 `;
 
 export const CloseButton = styled.button`
-  
   ${Typography.H1}
   color: ${Color.Button_Color};
   background-color: transparent;

@@ -4,9 +4,10 @@ export enum ROUTE {
   SEARCH = "search/:query/:page",
   BOOK_DETAILS = "book/:isbn",
   FAVORITES = "favorites",
-  ACCOUNT = "account",
   SHOP_BAG = "shop-bag",
-  SIGNIN = "sign-in",
-  SIGNUP = "sign-up",
+  
+  ACCOUNT = "account",
+  SIGN_IN = "sign-in",
+  SIGN_UP = "sign-up",
   RESET_PASSWORD = "reset-password",
 }

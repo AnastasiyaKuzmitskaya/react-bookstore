@@ -42,7 +42,6 @@ const SearchInput = styled.input`
   }
 `;
 
-
 const SearchButton = styled(motion.button)`
   width: 100%;
   max-width: 24px;

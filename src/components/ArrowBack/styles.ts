@@ -9,13 +9,13 @@ export const ButtonArrow = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  
+
   ${Media.MD} {
     margin-bottom: ${Margin.Medium};
   }
 `;
 
-export const StyledArrowIcon=styled(ArrowBackIcon)`
- background: none;
+export const StyledArrowIcon = styled(ArrowBackIcon)`
+  background: none;
   border: none;
 `;

@@ -8,7 +8,7 @@ class restBookStoreApi {
   });
 
   public async getNewBooks() {
-    const { data } = await this.API.get<INewBooksApi>("new");
+    const { data } = await this.API.get<INewBooksApi>("/new");
     return data;
   }
 
@@ -16,12 +16,12 @@ class restBookStoreApi {
     query: string | null,
     page: string | null = "1",
   ): Promise<ISearchBooksApi> {
-    const { data } = await this.API.get<ISearchBooksApi>(`search/${query}/${page}`);
+    const { data } = await this.API.get<ISearchBooksApi>(`/search/${query}/${page}`);
     return data;
   }
 
   public async getBookDetails(isbn: string): Promise<IBookDetailsApi> {
-    const { data } = await this.API.get<IBookDetailsApi>(`books/${isbn}`);
+    const { data } = await this.API.get<IBookDetailsApi>(`/books/${isbn}`);
     return data;
   }
 }

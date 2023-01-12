@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 import { SearchButton, SearchInput, StyledForm } from "./styles";
 
-
 export const Search = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();

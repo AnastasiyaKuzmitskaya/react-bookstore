@@ -1,9 +1,10 @@
 import { ArrowBack, BookTabs, DetailsBook, Loading, SocialsIcons, Title } from "components";
-import { BookSlider } from "components/BookSlider/BookSlider";
+import { BookSlider } from "components";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchBookDetails, useAppDispatch, useAppSelector } from "store";
 import { getBookDetails } from "store/selectors/bookDetailsSelector";
+import { StyledBookPage } from "./styles";
 
 export const DetailsBookPage = () => {
   const { isbn = "" } = useParams();
@@ -24,7 +25,7 @@ export const DetailsBookPage = () => {
   }
 
   return (
-    <>
+    <StyledBookPage>
       <ArrowBack />
       <Title title={title} />
       <DetailsBook book={book} />
@@ -32,6 +33,6 @@ export const DetailsBookPage = () => {
       <SocialsIcons />
       <Title title="Similar Books" />
       <BookSlider />
-    </>
+    </StyledBookPage>
   );
 };

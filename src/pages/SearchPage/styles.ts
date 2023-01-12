@@ -4,7 +4,6 @@ import { Typography } from "ui";
 export const StyledSearchPage = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 export const EmptyList = styled.h3`

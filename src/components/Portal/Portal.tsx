@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { createPortal } from "react-dom";
 
-
 export enum TargetPortal {
   ROOT = "root",
   MODAL = "modal",

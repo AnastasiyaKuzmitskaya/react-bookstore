@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Color, Margin, Media, Typography } from "ui";
 
-
 export const StyledBookItem = styled.li`
   position: relative;
   display: -webkit-box;

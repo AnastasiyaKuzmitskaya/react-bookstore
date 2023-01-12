@@ -5,7 +5,6 @@ import { setTheme } from "store/features/theme-slice";
 import { Color } from "ui";
 import { StyledToggler } from "./styles";
 
-
 export const TogglerTheme = () => {
   const dispatch = useDispatch();
   const theme = useSelector(selectTheme);
