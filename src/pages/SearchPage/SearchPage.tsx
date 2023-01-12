@@ -21,16 +21,14 @@ export const SearchPage = () => {
   }, [dispatch, searchValue, page]);
 
   return (
-    <>
+    <StyledSearchPage>
       <ArrowBack />
-      <StyledSearchPage>
-        <Title title={`'${searchValue ? searchValue : " "}' search results`} />
-        {searchResponse.total !== "0" ? (
-          <BooksList books={searchResponse.books} isLoading={isLoading} error={error} />
-        ) : (
-          <EmptyList>No results were found for your search</EmptyList>
-        )}
-      </StyledSearchPage>
-    </>
+      <Title title={` ${searchValue ? searchValue : " "} search results`} />
+      {searchResponse.total !== "0" ? (
+        <BooksList books={searchResponse.books} isLoading={isLoading} error={error} />
+      ) : (
+        <EmptyList>No results were found for your search</EmptyList>
+      )}
+    </StyledSearchPage>
   );
 };

@@ -55,12 +55,13 @@ const searchSlice = createSlice({
       state.searchResponse.total = null;
     },
   },
+
   extraReducers(builder) {
     builder.addCase(fetchBooksBySearch.fulfilled, (state, { payload }) => {
       state.isLoading = false;
       state.error = null;
       state.searchResponse.books = payload.books;
-      state.searchResponse.error = payload.page;
+      state.searchResponse.error = payload.error;
       state.searchResponse.page = payload.page;
       state.searchResponse.total = payload.total;
     });
@@ -69,8 +70,8 @@ const searchSlice = createSlice({
       state.error = null;
     });
     builder.addCase(fetchBooksBySearch.rejected, (state, { payload }) => {
+      state.isLoading = false;
       if (payload) {
-        state.isLoading = false;
         state.error = payload;
       }
     });

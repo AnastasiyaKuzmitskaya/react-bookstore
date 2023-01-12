@@ -1,6 +1,6 @@
 import { BookItem } from "./BookItem/BookItem";
 import { BooksList } from "./BooksList/BooksList";
-import { Favorites } from "./Favorites/Favorites";
+import { FavoritesBooks } from "./FavoritesBooks/FavoritesBooks";
 import { Header } from "./Header/Header";
 import { Search } from "./Search/Search";
 import { Navbar } from "./Navbar/Navbar";
@@ -20,11 +20,15 @@ import { ModalWindow } from "./ModalWindow/ModalWindow";
 import { BurgerNavBar } from "./BurgerNavBar/BurgerNavBar";
 import { MenuDetailed } from "./MenuDetailed/MenuDetailed";
 import { RequareAuth } from "./RequareAuth/RequareAuth";
+import { SignInForm } from "./SignInForm/SignInForm";
+import { SignUpForm } from "./SignUpForm/SignUpForm";
+import { ResetPasswordForm } from "./ResetPasswordForm/ResetPasswordForm";
+import { BookSlider } from "./BookSlider/BookSlider";
 
 export {
   BookItem,
   BooksList,
-  Favorites,
+  FavoritesBooks,
   Header,
   Search,
   Navbar,
@@ -45,4 +49,8 @@ export {
   BurgerNavBar,
   MenuDetailed,
   RequareAuth,
+  SignInForm,
+  SignUpForm,
+  ResetPasswordForm,
+  BookSlider,
 };
