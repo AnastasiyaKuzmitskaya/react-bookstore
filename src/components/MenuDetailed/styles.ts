@@ -1,6 +1,6 @@
 import { CloseIcon } from "assets";
 import styled from "styled-components";
-import { Color, Margin, Typography } from "ui";
+import { Color, Typography } from "ui";
 
 interface IProps {
   open?: boolean;
@@ -20,48 +20,67 @@ export const Background = styled.div<IProps>`
 `;
 
 export const StyledMenuDetailed = styled.div<IProps>`
-  margin: 0 auto;
-  z-index: 3;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 250px;
+  padding: 20px 12px 0 12px;
+  text-align: center;
+  background: ${Color.Purple};
+  color: ${Color.Primary};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  transition: all 0.5s ease-in-out;
+`;
 
-  @media (max-width: 800px) {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    height: 100vh;
-    width: 375px;
-    padding-top: 23px;
-    text-align: center;
-    color: ${Color.Primary};
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    transition: transform 0.4s ease-in-out;
-    background-color: ${Color.Green};
+export const BurgerHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+`;
+export const CloseBurgerIcon = styled(CloseIcon)`
+  cursor: pointer;
+  transition: all 0.4s;
+  :hover path {
+    fill: ${Color.Secondary};
+    transition: 0.3s ease;
+  }
+
+  :active path {
+    fill: ${Color.Primary};
+    transition: 0.3s ease;
   }
 `;
 
-export const CloseBurgerIcon = styled(CloseIcon)`
-  fill: ${Color.Green};
-`;
-
-export const NavBurgerList = styled.li`
+export const NavBurgerList = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${Margin.SuperLarge};
-  margin: 0 auto;
-  max-width: 287px;
+  margin: 20px auto;
   background: transparent;
 `;
 export const Title = styled.h4`
   ${Typography.B1}
+  margin-bottom: 20px;
   background: transparent;
-
   text-transform: uppercase;
   color: ${Color.Primery_Text};
-
   :hover {
-    color: goldenrod;
     transition: all 0.4s;
   }
+`;
+
+export const Button = styled.button`
+  padding: 6px 34px;
+  ${Typography.B1}
+  color: ${Color.White};
+  margin-bottom: 20px;
+  border: none;
+  background-color: ${Color.Primery_Text};
+  cursor: pointer;
 `;

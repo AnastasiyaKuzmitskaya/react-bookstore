@@ -1,8 +1,17 @@
-import { TogglerTheme } from "components";
+import { Search, TogglerTheme } from "components";
 import { useWindowSize } from "hooks";
 import { Link } from "react-router-dom";
 import { ROUTE } from "routes";
-import { StyledMenuDetailed, CloseBurgerIcon, NavBurgerList, Title } from "./styles";
+import { getUser, useAppSelector } from "store";
+import {
+  StyledMenuDetailed,
+  CloseBurgerIcon,
+  NavBurgerList,
+  Title,
+  Background,
+  BurgerHeader,
+  Button,
+} from "./styles";
 interface IProps {
   open?: boolean;
   close?: () => void;
@@ -10,38 +19,60 @@ interface IProps {
 
 export const MenuDetailed = ({ open, close }: IProps) => {
   const { width = 0 } = useWindowSize();
+  const { isAuth } = useAppSelector(getUser);
 
-  if (width < 767) {
+  if (isAuth) {
     return (
       <>
-        <StyledMenuDetailed open={open} onClick={close}>
-          <TogglerTheme />
-          <CloseBurgerIcon />
+        {width < 768 && (
+          <>
+            <Background open={open} onClick={close} />
+            <StyledMenuDetailed open={open} onClick={close}>
+              <BurgerHeader>
+                <TogglerTheme />
+                <CloseBurgerIcon />
+              </BurgerHeader>
+              <Search />
+              <NavBurgerList>
+                <Link to={ROUTE.FAVORITES} onClick={close}>
+                  <Title>Favorites</Title>
+                </Link>
 
-          <NavBurgerList>
-            <Link to={ROUTE.SEARCH} onClick={close}>
-              <Title>Search</Title>
-            </Link>
+                <Link to={ROUTE.SHOP_BAG} onClick={close}>
+                  <Title>Shop</Title>
+                </Link>
 
-            <Link to={ROUTE.FAVORITES} onClick={close}>
-              <Title>Favorites</Title>
-            </Link>
+                <Link to={ROUTE.ACCOUNT} onClick={close}>
+                  <Title>Account</Title>
+                </Link>
+              </NavBurgerList>
+            </StyledMenuDetailed>
+          </>
+        )}
+      </>
+    );
+  } else {
+    return (
+      <>
+        {width < 768 && (
+          <>
+            <Background open={open} onClick={close} />
+            <StyledMenuDetailed open={open} onClick={close}>
+              <BurgerHeader>
+                <TogglerTheme />
+                <CloseBurgerIcon />
+              </BurgerHeader>
+              <Search />
 
-            <Link to={ROUTE.SHOP_BAG} onClick={close}>
-              <Title>Shop</Title>
-            </Link>
-
-            <Link to={ROUTE.ACCOUNT} onClick={close}>
-              <Title>Account</Title>
-            </Link>
-          </NavBurgerList>
-        </StyledMenuDetailed>
+              <NavBurgerList>
+                <Link to={ROUTE.SIGN_UP} onClick={close}>
+                  <Button type="button">SIGN_IN</Button>
+                </Link>
+              </NavBurgerList>
+            </StyledMenuDetailed>
+          </>
+        )}
       </>
     );
   }
-  return (
-    <>
-      <p>"tgrdffgted"</p>
-    </>
-  );
 };
