@@ -48,6 +48,10 @@ interface IFormatBook {
   [format: string]: string;
 }
 
+interface IBookCartAPI  extends IBookDetailsApi {
+  amount: number;
+}
+
 export type {
   INewBookApi,
   INewBooksApi,
@@ -55,4 +59,5 @@ export type {
   IBookDetailsApi,
   IFormatBook,
   INewBooksResponse,
+  IBookCartAPI,
 };

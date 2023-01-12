@@ -22,8 +22,8 @@ export const FavoritesBooks = ({ book }: IProps) => {
       <StyledFavoritesBooks>
         <Link to={`/react-bookstore/book/${book.isbn13}`}>
           <Image src={book.image} alt={book.title} />
-          <FavoriteButton book={book} />
         </Link>
+        <FavoriteButton book={book} />
         <Description>
           <Title>{book.title}</Title>
           <Authors>

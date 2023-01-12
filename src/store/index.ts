@@ -10,7 +10,7 @@ import { persistor } from "./store";
 import { getSearch } from "./selectors/searchSelector";
 import { fetchBooksBySearch } from "./features/searchSlice";
 import { getUser } from "./selectors/useSelector";
-
+import { getCart } from "./selectors/cartSelector";
 export type { AppDispatch, RootState };
 export {
   fetchNewBooks,
@@ -26,4 +26,5 @@ export {
   getSearch,
   fetchBooksBySearch,
   getUser,
+  getCart,
 };

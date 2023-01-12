@@ -1,12 +1,12 @@
 import { MainTemplate, RequareAuth } from "components";
 import {
   AccountPage,
+  CartPage,
   DetailsBookPage,
   HomePage,
   NotFoundPage,
   ResetPasswordPage,
   SearchPage,
-  ShopBagPage,
   SignInPage,
   SignUpPage,
 } from "pages";
@@ -26,7 +26,7 @@ export const router = createBrowserRouter(
 
      {/*  <Route element={<RequareAuth />}> */}
         <Route path={ROUTE.FAVORITES} element={<FavoritesPage />} />
-        <Route path={ROUTE.SHOP_BAG} element={<ShopBagPage />} />
+        <Route path={ROUTE.SHOP_BAG} element={<CartPage />} />
         <Route path={ROUTE.ACCOUNT} element={<AccountPage />} />
       {/* </Route> */}
 

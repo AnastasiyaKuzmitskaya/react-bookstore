@@ -3,7 +3,9 @@ import bookDetailsReducer from "./features/bookDetailsSlice";
 import newBooksReducer from "./features/newBooksSlice";
 import { themeReducer } from "./features/theme-slice";
 import searchReducer from "./features/searchSlice";
-import  userReducer from "./features/userSlice";
+import userReducer from "./features/userSlice";
+import cartBookReducer from "./features/cartBookSlice";
+
 import {
   FLUSH,
   PAUSE,
@@ -28,7 +30,9 @@ const rootReducer = combineReducers({
   bookDetails: bookDetailsReducer,
   favorites: favoritesReducer,
   search: searchReducer,
+  cart: cartBookReducer,
   user: userReducer,
+  
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
