@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { IBookDetailsApi } from "services";
-import { Container, ContainerDescription, StyledTabBar, TabDescription, TabItem } from "./styles";
+import {
+  ContainerDescription,
+  StyledTabBar,
+  StyledTabList,
+  TabDescription,
+  TabItem,
+} from "./styles";
 
 interface IProps {
   book: IBookDetailsApi | undefined;
@@ -23,7 +29,7 @@ export const BookTabs = ({ book }: IProps) => {
   return (
     <>
       <StyledTabBar>
-        <Container>
+        <StyledTabList>
           <TabItem isActive={active === "description"} onClick={handleDescription}>
             Description
           </TabItem>
@@ -33,7 +39,7 @@ export const BookTabs = ({ book }: IProps) => {
           <TabItem isActive={active === "reviews"} onClick={handleReviews}>
             Reviews
           </TabItem>
-        </Container>
+        </StyledTabList>
 
         {active === "description" && (
           <ContainerDescription>
@@ -50,9 +56,8 @@ export const BookTabs = ({ book }: IProps) => {
         {active === "reviews" && (
           <ContainerDescription>
             <TabDescription>
-              {" "}
               <a href={book?.url} target="blank">
-                Ebook
+                Link to Book
               </a>
             </TabDescription>
           </ContainerDescription>

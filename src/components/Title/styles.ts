@@ -6,7 +6,7 @@ export const StyledTitle = styled.h1`
   ${Typography.H1};
 
   text-align: left;
-
+  text-transform: uppercase;
   ${Media.SM} {
     margin-bottom: ${Margin.SuperLargeMobile};
   }
