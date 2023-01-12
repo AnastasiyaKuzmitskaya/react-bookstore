@@ -26,7 +26,7 @@ export const BookSlider = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
+          infinite: false,
           dots: true,
         },
       },
