@@ -1,28 +1,15 @@
 import styled from "styled-components";
-import { Media } from "ui";
 
 export const StyledMainTemplate = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 15px 0;
-`;
-
-export const Container = styled.div`
-  width: 100%;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  ${Media.XL} {
-    max-width: 1020px;
-    margin: 0 40px;
-  }
+  overflow: hidden;
+`;
 
-  ${Media.LG} {
-    max-width: 820px;
-    margin: 0 10px;
-  }
-  ${Media.MD} {
-    min-width: none;
-  }
+export const Container = styled.div`
+  flex-grow: 1;
 `;

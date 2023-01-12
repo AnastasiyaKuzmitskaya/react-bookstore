@@ -14,11 +14,11 @@ export const MainTemplate = () => {
   }, [theme]);
   return (
     <StyledMainTemplate>
+      <Header />
       <Container>
-        <Header />
         <Outlet />
-        <Footer />
       </Container>
+      <Footer />
     </StyledMainTemplate>
   );
 };
