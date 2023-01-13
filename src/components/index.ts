@@ -24,7 +24,10 @@ import { SignInForm } from "./SignInForm/SignInForm";
 import { SignUpForm } from "./SignUpForm/SignUpForm";
 import { ResetPasswordForm } from "./ResetPasswordForm/ResetPasswordForm";
 import { BookSlider } from "./BookSlider/BookSlider";
-import { CartList } from "./CartList/CartList";
+import { CardShopItem } from "./CardShopItem/CardShopItem";
+import { CartTotal } from "./CartTotal/CartTotal";
+import { SeparatorLine } from "./SeparatorLine/SeparatorLine";
+
 export {
   BookItem,
   BooksList,
@@ -53,5 +56,7 @@ export {
   SignUpForm,
   ResetPasswordForm,
   BookSlider,
-  CartList,
+  CardShopItem,
+  CartTotal,
+  SeparatorLine
 };

@@ -16,6 +16,9 @@ import {
   Price,
   StyledDetailsBook,
 } from "./styles";
+import { useAppDispatch } from "store";
+import { setCart } from "store/features/cartBookSlice";
+import { useEffect } from "react";
 
 interface IProps {
   book: IBookDetailsApi;
@@ -24,10 +27,24 @@ interface IProps {
 export const DetailsBook = ({ book }: IProps) => {
   const [isActive, setIsActive] = useToggle();
   const [isOpen, setIsOpen] = useToggle();
+  const dispatch = useAppDispatch();
 
+  const handleAddToCart = (book: IBookDetailsApi) => {
+    dispatch(setCart({ ...book, amount: 1 }));
+    setIsOpen();
+  };
   const handleDetails = (): void => {
     setIsActive();
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      const handler = setTimeout(() => {
+        setIsOpen();
+      }, 2000);
+      return () => clearTimeout(handler);
+    }
+  }, [isOpen, setIsOpen]);
 
   return (
     <StyledDetailsBook>
@@ -92,16 +109,17 @@ export const DetailsBook = ({ book }: IProps) => {
             </InfoArrow>
           )}
         </MoreDetails>
-        <CartButton type="button" onClick={setIsOpen}>
+        <CartButton type="button" onClick={() => handleAddToCart(book)}>
           add to cart
         </CartButton>
         <ModalWindow
           isOpen={isOpen}
-          status={"error"}
+          status={"success"}
           message={
             // eslint-disable-next-line max-len
             "you are not a user of the site.To add a book to the cart, you need to go through authorization"
           }
+          messageOpen={"Cart"}
           handleModal={setIsOpen}
         />
       </BookDetails>

@@ -18,7 +18,7 @@ export const BurgerNavBar = () => {
 
   return (
     <>
-      {width < 768 && (
+      {width < 769 && (
         <>
           <StyledBurger whileHover={{ scale: 1.1 }}>
             <BurgerMenuIcon width="28" height="28" fill={Color.Primary} onClick={handleOpen} />

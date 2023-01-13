@@ -22,8 +22,24 @@ const cartBookSlice = createSlice({
     deleteCart: (state, { payload }: PayloadAction<IBookDetailsApi>) => {
       state.cartItems = state.cartItems.filter((item) => item.isbn13 !== payload.isbn13);
     },
+
+    incrementAmount: (state, { payload }: PayloadAction<IBookCartAPI>) => {
+      const cartItems = state.cartItems.find((item) => item.isbn13 === payload.isbn13);
+
+      if (cartItems) {
+        cartItems.amount = cartItems.amount + 1;
+      }
+    },
+
+    decrementAmount: (state, { payload }: PayloadAction<IBookCartAPI>) => {
+      const cartItems = state.cartItems.find((item) => item.isbn13 === payload.isbn13);
+
+      if (cartItems) {
+        cartItems.amount = cartItems.amount - 1;
+      }
+    },
   },
 });
-export const { setCart, deleteCart } = cartBookSlice.actions;
+export const { setCart, deleteCart, incrementAmount, decrementAmount } = cartBookSlice.actions;
 
 export default cartBookSlice.reducer;

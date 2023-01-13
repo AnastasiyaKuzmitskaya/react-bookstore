@@ -81,7 +81,3 @@ export const Price = styled.p`
   align-content: flex-end;
 `;
 
-export const SeparatorLine = styled.div`
-  width: 100%;
-  border-bottom: 1px solid ${Color.Gray};
-`;

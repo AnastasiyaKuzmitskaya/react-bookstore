@@ -24,7 +24,7 @@ export const MenuDetailed = ({ open, close }: IProps) => {
   if (isAuth) {
     return (
       <>
-        {width < 768 && (
+        {width < 769 && (
           <>
             <Background open={open} onClick={close} />
             <StyledMenuDetailed open={open} onClick={close}>
@@ -54,7 +54,7 @@ export const MenuDetailed = ({ open, close }: IProps) => {
   } else {
     return (
       <>
-        {width < 768 && (
+        {width < 769 && (
           <>
             <Background open={open} onClick={close} />
             <StyledMenuDetailed open={open} onClick={close}>

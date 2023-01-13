@@ -7,9 +7,7 @@ const StyledDetailsBook = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-bottom: ${Margin.ExtraLarge};
-  ${Media.LG} {
-    flex-direction: column;
-  }
+
   ${Media.MD} {
     margin-bottom: ${Margin.ExtraLargeMobile};
   }

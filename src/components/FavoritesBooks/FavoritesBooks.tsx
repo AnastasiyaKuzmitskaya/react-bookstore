@@ -1,4 +1,4 @@
-import { FavoriteButton, RatingStars } from "components";
+import { FavoriteButton, RatingStars, SeparatorLine } from "components";
 import { Link } from "react-router-dom";
 import { IBookDetailsApi } from "services";
 import {
@@ -9,7 +9,6 @@ import {
   Authors,
   PriceAndRating,
   Price,
-  SeparatorLine,
 } from "./styles";
 
 interface IProps {
