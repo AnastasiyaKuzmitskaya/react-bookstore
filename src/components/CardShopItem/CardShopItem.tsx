@@ -38,7 +38,7 @@ export const CardShopItem = ({ book }: IProps) => {
 
   return (
     <>
-      <StyledCartTotal>
+      <StyledCartTotal >
         {width > 768 && (
           <>
             <Link to={`/react-bookstore/book/${book.isbn13}`}>
@@ -49,7 +49,6 @@ export const CardShopItem = ({ book }: IProps) => {
               <Authors>
                 {book.authors}, {book.year}
               </Authors>
-
               <CountDescription>
                 <ButtonCount onClick={handleCountMinus}>-</ButtonCount>
                 <AmountCount>{book.amount}</AmountCount>
@@ -87,7 +86,6 @@ export const CardShopItem = ({ book }: IProps) => {
                 </CostPrice>
               </CountAndCostDescription>
             </Description>
-
             <ButtonRemoveIcon onClick={handleDeleteBook} />
           </>
         )}

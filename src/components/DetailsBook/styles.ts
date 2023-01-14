@@ -96,7 +96,6 @@ const CartButton = styled.button`
   width: 100%;
   padding: 15px 10px;
   margin: 0 auto;
-
   ${Typography.H3};
   color: ${Color.Button_Text};
   text-transform: uppercase;
@@ -111,7 +110,6 @@ const CartButton = styled.button`
   }
 `;
 
-export { CartButton };
 
 export {
   StyledDetailsBook,
@@ -125,4 +123,5 @@ export {
   Attribute,
   MoreDetails,
   InfoArrow,
+  CartButton
 };

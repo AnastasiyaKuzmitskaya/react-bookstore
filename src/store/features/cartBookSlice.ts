@@ -6,6 +6,7 @@ const initialState: ICartStore = {
   cartItems: [],
   total: null,
   isLoading: true,
+  sum: null,
 };
 
 const cartBookSlice = createSlice({

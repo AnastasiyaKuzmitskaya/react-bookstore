@@ -4,7 +4,7 @@ import { Margin, Media, Typography } from "ui";
 export const StyledCartPage = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
 `;
 export const CartList = styled.ul`
   display: flex;

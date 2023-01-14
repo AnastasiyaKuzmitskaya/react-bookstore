@@ -18,4 +18,5 @@ export interface ICartStore {
   cartItems: IBookCartAPI[];
   total: number| null;
   isLoading: boolean;
+  sum: number| null;
 }
