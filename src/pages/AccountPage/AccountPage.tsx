@@ -1,6 +1,12 @@
-import React from "react";
+import { ArrowBack, Profile, Title } from "components";
+import { StyledAccountPage } from "./styles";
 
 export const AccountPage = () => {
-  
-  return <div>AccountPage</div>;
+  return (
+    <StyledAccountPage>
+      <ArrowBack />
+      <Title title="account" />
+      <Profile />
+    </StyledAccountPage>
+  );
 };

@@ -27,7 +27,7 @@ import { BookSlider } from "./BookSlider/BookSlider";
 import { CardShopItem } from "./CardShopItem/CardShopItem";
 import { CartTotal } from "./CartTotal/CartTotal";
 import { SeparatorLine } from "./SeparatorLine/SeparatorLine";
-
+import { Profile } from "./Profile/Profile";
 export {
   BookItem,
   BooksList,
@@ -58,5 +58,6 @@ export {
   BookSlider,
   CardShopItem,
   CartTotal,
-  SeparatorLine
+  SeparatorLine,
+  Profile,
 };

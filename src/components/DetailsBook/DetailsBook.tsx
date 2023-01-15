@@ -16,7 +16,7 @@ import {
   Price,
   StyledDetailsBook,
 } from "./styles";
-import { useAppDispatch } from "store";
+import { getUser, useAppDispatch, useAppSelector } from "store";
 import { setCart } from "store/features/cartBookSlice";
 import { useEffect } from "react";
 
@@ -28,7 +28,7 @@ export const DetailsBook = ({ book }: IProps) => {
   const [isActive, setIsActive] = useToggle();
   const [isOpen, setIsOpen] = useToggle();
   const dispatch = useAppDispatch();
-
+  const { isAuth } = useAppSelector(getUser);
   const handleAddToCart = (book: IBookDetailsApi) => {
     dispatch(setCart({ ...book, amount: 1 }));
     setIsOpen();
@@ -112,16 +112,29 @@ export const DetailsBook = ({ book }: IProps) => {
         <CartButton type="button" onClick={() => handleAddToCart(book)}>
           add to cart
         </CartButton>
-        <ModalWindow
-          isOpen={isOpen}
-          status={"success"}
-          message={
-            // eslint-disable-next-line max-len
-            "you are not a user of the site.To add a book to the cart, you need to go through authorization"
-          }
-          messageOpen={"Cart"}
-          handleModal={setIsOpen}
-        />
+        {isAuth ? (
+          <ModalWindow
+            isOpen={isOpen}
+            status={"error"}
+            message={
+              // eslint-disable-next-line max-len
+              "you are not a user of the site.To add a book to the cart, you need to go through authorization"
+            }
+            messageOpen={"Sign in"}
+            handleModal={setIsOpen}
+          />
+        ) : (
+          <ModalWindow
+            isOpen={isOpen}
+            status={"success"}
+            message={
+              // eslint-disable-next-line max-len
+              "the book has been successfully added to the cart"
+            }
+            messageOpen={"Cart"}
+            handleModal={setIsOpen}
+          />
+        )}
       </BookDetails>
     </StyledDetailsBook>
   );
