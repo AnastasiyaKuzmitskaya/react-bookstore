@@ -11,11 +11,11 @@ export type SignUpFormValue = {
   confirm: string;
 };
 export type OpenModal = {
-    handleModal: () => void;
-}
+  handleModal: () => void;
+};
 
-export const SignUpForm = ({handleModal}:OpenModal) => {
-  const isLoading  = useAppSelector(getUser);
+export const SignUpForm = ({ handleModal }: OpenModal) => {
+  const isLoading = useAppSelector(getUser);
   const dispatch = useAppDispatch();
   const [isOpen, setIsOpen] = useToggle();
   const {
