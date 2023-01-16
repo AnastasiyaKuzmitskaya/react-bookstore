@@ -1,4 +1,5 @@
 import { ArrowBack, Profile, Title } from "components";
+import { RegisterPage } from "pages";
 import { StyledAccountPage } from "./styles";
 
 export const AccountPage = () => {
@@ -7,6 +8,7 @@ export const AccountPage = () => {
       <ArrowBack />
       <Title title="account" />
       <Profile />
+      <RegisterPage />
     </StyledAccountPage>
   );
 };
