@@ -44,31 +44,36 @@ export const FormInput = styled.input`
   flex-grow: 1;
   padding: 5px 20px;
   ${Typography.SearchInput};
-  color: ${Color.Primary_Light};
-  border: 1px solid #e7e7e7;
+  color: ${Color.Primary};
+  border: 1px solid ${Color.Gray};
   outline: none;
 
   &:focus {
-    background-color: ${Color.Red};
-    border: 2px solid #e7e7e7;
+    background-color: ${Color.Blue};
+    border: 2px solid ${Color.Gray};
   }
 
   &::placeholder {
     ${Typography.SearchInput};
-    color: ${Color.Orange};
+    color: ${Color.Primary_Light};
     opacity: 1;
   }
 `;
 export const PasswordForm = styled.div`
   display: flex;
-  flex-direction: column;
+  
   gap: 26px;
   width: 100%;
+  
   margin-bottom: ${Margin.ExtraLarge};
-  ${Media.MD} {
-    margin-bottom: ${Margin.SuperLargeMobile};
+
+  ${Media.LG} {
+    flex-direction: column;
     gap: 8px;
+    margin-bottom: ${Margin.SuperLargeMobile};
+
   }
+  
 `;
 
 export const ButtonGroup = styled.div`
@@ -98,6 +103,7 @@ export const SaveButton = styled.button`
   :hover,
   :active {
     background: ${Color.Hover};
+    transition: all 0.3s;
   }
   :disabled {
     background: ${Color.Secondary};
@@ -145,3 +151,11 @@ export const ConfirmPassWrapper = styled.div`
     width: 100%;
   }
 `;
+
+
+export const ErrorMessage = styled.p`
+  padding-top: 10px;
+  color: ${Color.Red};
+  text-transform: uppercase;
+`;
+

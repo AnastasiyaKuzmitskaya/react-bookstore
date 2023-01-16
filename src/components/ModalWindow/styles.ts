@@ -28,8 +28,8 @@ export const ModalWrapper = styled.div`
   border-radius: 24px;
   transition: all 0.3s ease-in-out;
   ${Media.MD} {
-    width: 590px;
-    height: 172px;
+    width: 350px;
+    height: 160px;
     padding: 15px;
     overflow: auto;
   }
