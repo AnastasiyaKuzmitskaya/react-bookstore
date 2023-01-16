@@ -65,7 +65,7 @@ export const MenuDetailed = ({ open, close }: IProps) => {
               <Search />
 
               <NavBurgerList>
-                <Link to={ROUTE.SIGN_UP} onClick={close}>
+                <Link to={ROUTE.REGISTRATION} onClick={close}>
                   <Button type="button">SIGN_IN</Button>
                 </Link>
               </NavBurgerList>

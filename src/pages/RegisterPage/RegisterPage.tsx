@@ -1,4 +1,5 @@
-import { SignInForm, SignUpForm } from "components";
+import { ModalWindow, SignInForm, SignUpForm } from "components";
+import { useToggle } from "hooks";
 import { useState } from "react";
 import { FormTab, FormWrapper, StyledRegisterPage, SwitchWrapper } from "./styles";
 
@@ -7,6 +8,8 @@ export interface IFormSwitch {
   signUp: boolean;
 }
 export const RegisterPage = () => {
+  const [isOpen, setIsOpen] = useToggle();
+
   const [activeTab, setActiveTab] = useState<IFormSwitch>({
     signIn: true,
     signUp: false,
@@ -24,6 +27,7 @@ export const RegisterPage = () => {
       signIn: false,
       signUp: true,
     });
+    setIsOpen();
   };
 
   return (
@@ -39,8 +43,15 @@ export const RegisterPage = () => {
           </FormTab>
         </SwitchWrapper>
         {activeTab.signIn && <SignInForm />}
-        {activeTab.signUp && <SignUpForm />}
+        {activeTab.signUp && <SignUpForm handleModal={setIsOpen}  />}
       </FormWrapper>
+      <ModalWindow
+        isOpen={isOpen}
+        handleModal={handleSignUp}
+        message="you have successfully logged in."
+        messageOpen="Sign_Up"
+        status="success"
+      ></ModalWindow>
     </StyledRegisterPage>
   );
 };

@@ -5,10 +5,9 @@ import {
   DetailsBookPage,
   HomePage,
   NotFoundPage,
+  RegisterPage,
   ResetPasswordPage,
   SearchPage,
-  SignInPage,
-  SignUpPage,
 } from "pages";
 import { FavoritesPage } from "pages/FavoritesPage/FavoritesPage";
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
@@ -23,15 +22,12 @@ export const router = createBrowserRouter(
       <Route path={ROUTE.BOOK_DETAILS} element={<DetailsBookPage />} />
       <Route path={ROUTE.NOT_FOUND} element={<NotFoundPage />} />
       <Route path={ROUTE.RESET_PASSWORD} element={<ResetPasswordPage />} />
-
-     {/*  <Route element={<RequareAuth />}> */}
+      <Route path={ROUTE.REGISTRATION} element={<RegisterPage />} />
+      <Route element={<RequareAuth />}>
         <Route path={ROUTE.FAVORITES} element={<FavoritesPage />} />
         <Route path={ROUTE.SHOP_BAG} element={<CartPage />} />
         <Route path={ROUTE.ACCOUNT} element={<AccountPage />} />
-      {/* </Route> */}
-
-      <Route path={ROUTE.SIGN_IN} element={<SignInPage />} />
-      <Route path={ROUTE.SIGN_UP} element={<SignUpPage />} />
+      </Route>
     </Route>,
   ),
 );

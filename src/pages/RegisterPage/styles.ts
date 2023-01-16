@@ -6,9 +6,8 @@ interface ITabProps {
 }
 
 export const StyledRegisterPage = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+    display: grid;
+    place-items: center;
 `;
 
 export const FormWrapper = styled.div`
