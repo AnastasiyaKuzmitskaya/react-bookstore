@@ -16,7 +16,7 @@ const StyledForm = styled.form`
     max-width: 342px;
   }
   ${Media.SM} {
-    max-width: 100px;
+    width: 100%;
   }
 `;
 

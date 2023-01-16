@@ -1,4 +1,8 @@
+import { ModalWindow } from "components/ModalWindow/ModalWindow";
+import { useToggle } from "hooks";
 import { useForm } from "react-hook-form";
+import { fetchUpdateUser, useAppDispatch } from "store";
+
 import {
   AccountFormInfo,
   ButtonGroup,
@@ -24,16 +28,35 @@ type FormProfileValues = {
 };
 
 export const Profile = () => {
+  const dispatch = useAppDispatch();
+  const [isOpen, setIsOpenModal] = useToggle();
   const {
     register,
     handleSubmit,
+    setError,
+    reset,
     formState: { errors },
   } = useForm<FormProfileValues>({
     defaultValues: { email: "", password: "", confirm: "" },
   });
 
+  const onSubmit = async ({ name, email, password, newPassword, confirm }: FormProfileValues) => {
+    if (newPassword !== confirm) {
+      setError("confirm", {
+        message: "Passwords do not match. Try again",
+      });
+      return;
+    }
+    await dispatch(fetchUpdateUser({ name, email, password, newPassword, confirm }));
+    setIsOpenModal();
+    reset();
+  };
+  const onCancelClick = () => {
+    reset();
+  };
+
   return (
-    <StyledProfile>
+    <StyledProfile onSubmit={handleSubmit(onSubmit)}>
       <SubTitle>Profile</SubTitle>
       <AccountFormInfo>
         <InputContainer>
@@ -132,8 +155,17 @@ export const Profile = () => {
 
       <ButtonGroup>
         <SaveButton type="submit">save changes</SaveButton>
-        <CancelButton type="button">Cancel</CancelButton>
+        <CancelButton type="button" onClick={onCancelClick}>
+          Cancel
+        </CancelButton>
       </ButtonGroup>
+      <ModalWindow
+        isOpen={isOpen}
+        status={"success"}
+        message={"User updated successfully!"}
+        messageOpen={"Welcome"}
+        handleModal={setIsOpenModal}
+      />
     </StyledProfile>
   );
 };

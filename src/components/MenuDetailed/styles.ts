@@ -46,6 +46,7 @@ export const BurgerHeader = styled.div`
 export const CloseBurgerIcon = styled(CloseIcon)`
   cursor: pointer;
   transition: all 0.4s;
+  fill: ${Color.Primary};
   :hover path {
     fill: ${Color.Secondary};
     transition: 0.3s ease;

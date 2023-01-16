@@ -5,11 +5,12 @@ import { useNavigate } from "react-router-dom";
 import { SearchButton, SearchInput, StyledForm } from "./styles";
 
 export const Search = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (data: any) => {
     navigate(`/react-bookstore/search/${data.query}/1`);
+    reset();
   };
 
   return (

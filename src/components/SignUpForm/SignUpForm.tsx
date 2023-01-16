@@ -10,8 +10,11 @@ export type SignUpFormValue = {
   password: string;
   confirm: string;
 };
+export type OpenModal = {
+    handleModal: () => void;
+}
 
-export const SignUpForm = () => {
+export const SignUpForm = ({handleModal}:OpenModal) => {
   const isLoading  = useAppSelector(getUser);
   const dispatch = useAppDispatch();
   const [isOpen, setIsOpen] = useToggle();
@@ -26,6 +29,7 @@ export const SignUpForm = () => {
   const onSubmit: SubmitHandler<SignUpFormValue> = (data) => {
     dispatch(fetchSignUpUser(data));
     setIsOpen();
+    handleModal();
   };
 
   return (

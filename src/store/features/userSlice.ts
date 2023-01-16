@@ -13,6 +13,8 @@ interface IRegisterUser {
   name: string;
   email: string;
   password: string;
+  confirm: string;
+  newPassword: string;
 }
 
 interface ISignInValues {
@@ -121,7 +123,7 @@ export const fetchUpdateUser = createAsyncThunk<
   void,
   IRegisterUser,
   { rejectValue: FirebaseError }
->("user/fetchUpdateUser", async ({ name, password, email }, { rejectWithValue }) => {
+>("user/fetchUpdateUser", async ({ name, password, email, confirm }, { rejectWithValue }) => {
   try {
     const auth = getAuth();
     const user = auth.currentUser;
