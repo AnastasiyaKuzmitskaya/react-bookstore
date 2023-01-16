@@ -1,7 +1,6 @@
 import { SubmitHandler, useForm } from "react-hook-form";
-import { fetchSignUpUser, getUser, useAppDispatch, useAppSelector } from "store";
+import { fetchSignUpUser, useAppDispatch } from "store";
 import { ButtonForm, FormInput, InputLabel, StyledSignInForm, ErrorMessage } from "./styles";
-import RotatingLines from "react-spinners/RotateLoader";
 import { useToggle } from "hooks";
 import { ModalWindow } from "components";
 
@@ -15,7 +14,6 @@ export type OpenModal = {
 };
 
 export const SignUpForm = ({ handleModal }: OpenModal) => {
-  const isLoading = useAppSelector(getUser);
   const dispatch = useAppDispatch();
   const [isOpen, setIsOpen] = useToggle();
   const {
@@ -93,7 +91,7 @@ export const SignUpForm = ({ handleModal }: OpenModal) => {
       {errors.password && <ErrorMessage>{errors.password.message}</ErrorMessage>}
 
       <ButtonForm type="submit" whileTap={{ scale: 1.1 }}>
-        {isLoading ? <RotatingLines size={25} /> : "Sign up"}{" "}
+        Sign up
       </ButtonForm>
     </StyledSignInForm>
   );
