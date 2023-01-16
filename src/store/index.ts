@@ -11,6 +11,12 @@ import { getSearch } from "./selectors/searchSelector";
 import { fetchBooksBySearch } from "./features/searchSlice";
 import { getUser } from "./selectors/useSelector";
 import { getCart } from "./selectors/cartSelector";
+import { fetchSignInUser } from "./features/userSlice";
+import { fetchSignUpUser } from "./features/userSlice";
+import { fetchSignOut } from "./features/userSlice";
+import { fetchResetPassword } from "./features/userSlice";
+import { fetchUpdateUser } from "./features/userSlice";
+
 export type { AppDispatch, RootState };
 export {
   fetchNewBooks,
@@ -27,4 +33,9 @@ export {
   fetchBooksBySearch,
   getUser,
   getCart,
+  fetchSignInUser,
+  fetchSignUpUser,
+  fetchSignOut,
+  fetchResetPassword,
+  fetchUpdateUser,
 };
